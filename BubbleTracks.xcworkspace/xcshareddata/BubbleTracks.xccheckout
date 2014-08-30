@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8E1D0C29-C195-4373-B609-79E4C959A027</string>
+	<string>2599C8BB-555B-4238-AF70-30FFEEA26EDD</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BubbleTracks</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/jtestard/bubbletracks.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BubbleTracks.xcodeproj/project.xcworkspace</string>
+	<string>BubbleTracks.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>651E5A67-9009-4FE8-8BEE-91526E57AE1E</key>
-		<string>../..</string>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jtestard/bubbletracks.git</string>
