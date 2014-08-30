@@ -145,7 +145,7 @@
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
     //We want to create the corresponding track at the location given by the
     UITableViewCell * tableViewCell = [tableView cellForRowAtIndexPath:indexPath];
-    NSString * name = tableViewCell.text;
+    NSString * name = tableViewCell.textLabel.text;
     for (AudioUnitWrapper *audioUnit in audioUnitArray) {
         if (audioUnit.name == name) {
             viewController = (ViewController*)[[self.navigationController viewControllers] objectAtIndex:0];

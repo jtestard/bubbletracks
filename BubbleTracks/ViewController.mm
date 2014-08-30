@@ -170,12 +170,14 @@
                         BubbleTrackView* trackView = (BubbleTrackView*) view;
                         [trackView removeAllLinks];
 //                        [self.audioMixer removeTrack:trackView.audioTrack.audioID];
+                        NSLog(@"Track bubble with no id has been removed...");
 //                        NSLog(@"Track bubble with id %d has been removed...", trackView.audioTrack.audioID);
                         // If view is an effect
                     } else if (view.type==FX){
                         BubbleFXView* fxView = (BubbleFXView*) view;
                         [fxView removeAllLinks];
 //                        [self.audioMixer removeEffect:fxView.audioEffect.fxID];
+                        NSLog(@"Effect bubble with no id has been removed...");
 //                        NSLog(@"Track bubble with id %d has been removed...", fxView.audioEffect.fxID);
                     }
                     
@@ -288,10 +290,8 @@
         default:
             break;
     }
-    NSString* circleString = (NSString*)[NSString stringWithFormat:@"%@%@",@"playing_",colorString];
-    NSString* circleStringlit = (NSString*)[NSString stringWithFormat:@"%@%@",@"playing_",colorString];
-    NSString* circle = [[NSBundle mainBundle] pathForResource:circleString ofType:@"png"];
-    NSString* circle_lit = [[NSBundle mainBundle] pathForResource:circleStringlit ofType:@"png"];
+    NSString* circle = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@%@",@"paused_",colorString] ofType:@"png"];
+    NSString* circle_lit = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@%@",@"playing_",colorString] ofType:@"png"];
     UIImage* img = [[UIImage alloc] initWithContentsOfFile:circle];
     UIImage* img_highlight = [[UIImage alloc] initWithContentsOfFile:circle_lit];
     BubbleTrackView* bubbleTrackView = [[BubbleTrackView alloc] initWithName:name Image:img HighlightedImage:img_highlight Location:lastTouched];

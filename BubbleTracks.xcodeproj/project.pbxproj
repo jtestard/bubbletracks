@@ -405,6 +405,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = julestestard;
 				TargetAttributes = {
+					E52850B619B162C1000EEEB0 = {
+						DevelopmentTeam = GG2GK8WTZ9;
+					};
 					E52850DA19B162C2000EEEB0 = {
 						TestTargetID = E52850B619B162C1000EEEB0;
 					};
@@ -658,6 +661,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BubbleTracks/BubbleTracks-Prefix.pch";
 				INFOPLIST_FILE = "BubbleTracks/BubbleTracks-Info.plist";
@@ -672,6 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BubbleTracks/BubbleTracks-Prefix.pch";
 				INFOPLIST_FILE = "BubbleTracks/BubbleTracks-Info.plist";
