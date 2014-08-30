@@ -32,13 +32,11 @@
 
 @implementation ViewController
 
-@synthesize bubblesArray, lastTouched, audioChannel;
+@synthesize bubblesArray, lastTouched;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //Set up the audio controller
-    [self audioControllerSetup];
     
     //Set up the view elements
     self.view.backgroundColor = [UIColor blackColor];
@@ -75,17 +73,6 @@
     [audioUnitArray addObjectsFromArray:fXUnitArray];
     _controller.audioUnitArray = audioUnitArray;
     _controller.selected = false;
-}
-
-- (void) audioControllerSetup {
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-    
-    NSError *errorAudioSetup = NULL;
-    BOOL result = [[appDelegate audioController] start:&errorAudioSetup];
-    if ( !result ) {
-        NSLog(@"Error starting audio engine: %@", errorAudioSetup.localizedDescription);
-    }
-    
 }
 
 - (void)didReceiveMemoryWarning

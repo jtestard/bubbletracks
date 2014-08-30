@@ -22,9 +22,6 @@
     self.window.rootViewController = self.navigationController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    self.audioController = [[AEAudioController alloc]
-                            initWithAudioDescription:[AEAudioController nonInterleavedFloatStereoAudioDescription]
-                            inputEnabled:NO];
     return YES;
 }
 							

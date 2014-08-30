@@ -11,19 +11,14 @@
 @class MenuViewController;
 @class BubbleTrackView;
 @class BubbleView;
-@class AEBlockChannel;
 
 @interface ViewController : UIViewController<UIGestureRecognizerDelegate> {
         NSMutableArray *bubblesArray;
-        AEBlockChannel *audioChannel;
         CGPoint lastTouched;   
 }
 
-@property (nonatomic, retain) AEBlockChannel *audioChannel;
 @property (nonatomic, retain) NSMutableArray *bubblesArray;
 @property (nonatomic, assign) CGPoint lastTouched;
-
-- (void) audioControllerSetup;
 
 /**
  Handles multiple simultaneous taps by the user in the pond.
