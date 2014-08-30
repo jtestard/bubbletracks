@@ -7,12 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "CustomNavigationViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ViewController *rootController = [[ViewController alloc] init];
+    CustomNavigationViewController * aNavigationController = [[CustomNavigationViewController alloc] initWithRootViewController:rootController];
+    self.navigationController = aNavigationController;
+    self.window.rootViewController = self.navigationController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     self.audioController = [[AEAudioController alloc]
                             initWithAudioDescription:[AEAudioController nonInterleavedFloatStereoAudioDescription]
                             inputEnabled:NO];

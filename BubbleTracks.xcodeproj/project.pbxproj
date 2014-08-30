@@ -1,1022 +1,756 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0C4C3C434D7143D696FB42FB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-BubbleTracks.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>13F68FBAA7904C47BB1C92F2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0C4C3C434D7143D696FB42FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4F910F0D228E44FD9CA3A216</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-BubbleTracks-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>5DB8ABF3BF414C9A94C460EB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-BubbleTracks.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-BubbleTracks.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ACFBE41373CB46D099D60953</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E52850AE19B162C1000EEEB0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E52850C019B162C1000EEEB0</string>
-				<string>E52850B919B162C1000EEEB0</string>
-				<string>E52850B819B162C1000EEEB0</string>
-				<string>5DB8ABF3BF414C9A94C460EB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850AF19B162C1000EEEB0</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>julestestard</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>E52850DA19B162C2000EEEB0</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>E52850B619B162C1000EEEB0</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>E52850B219B162C1000EEEB0</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>E52850AE19B162C1000EEEB0</string>
-			<key>productRefGroup</key>
-			<string>E52850B819B162C1000EEEB0</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E52850B619B162C1000EEEB0</string>
-				<string>E52850DA19B162C2000EEEB0</string>
-			</array>
-		</dict>
-		<key>E52850B219B162C1000EEEB0</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E52850EA19B162C2000EEEB0</string>
-				<string>E52850EB19B162C2000EEEB0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E52850B319B162C1000EEEB0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E52850D419B162C2000EEEB0</string>
-				<string>E52850CB19B162C1000EEEB0</string>
-				<string>E52850C719B162C1000EEEB0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E52850B419B162C1000EEEB0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E52850BD19B162C1000EEEB0</string>
-				<string>E52850BF19B162C1000EEEB0</string>
-				<string>E52850BB19B162C1000EEEB0</string>
-				<string>13F68FBAA7904C47BB1C92F2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E52850B519B162C1000EEEB0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E52850D119B162C1000EEEB0</string>
-				<string>E52850D619B162C2000EEEB0</string>
-				<string>E52850CE19B162C1000EEEB0</string>
-				<string>E52850C519B162C1000EEEB0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E52850B619B162C1000EEEB0</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E52850EC19B162C2000EEEB0</string>
-			<key>buildPhases</key>
-			<array>
-				<string>ACFBE41373CB46D099D60953</string>
-				<string>E52850B319B162C1000EEEB0</string>
-				<string>E52850B419B162C1000EEEB0</string>
-				<string>E52850B519B162C1000EEEB0</string>
-				<string>4F910F0D228E44FD9CA3A216</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BubbleTracks</string>
-			<key>productName</key>
-			<string>BubbleTracks</string>
-			<key>productReference</key>
-			<string>E52850B719B162C1000EEEB0</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>E52850B719B162C1000EEEB0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BubbleTracks.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E52850B819B162C1000EEEB0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E52850B719B162C1000EEEB0</string>
-				<string>E52850DB19B162C2000EEEB0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850B919B162C1000EEEB0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E52850BA19B162C1000EEEB0</string>
-				<string>E52850BC19B162C1000EEEB0</string>
-				<string>E52850BE19B162C1000EEEB0</string>
-				<string>E52850DC19B162C2000EEEB0</string>
-				<string>0C4C3C434D7143D696FB42FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850BA19B162C1000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>E52850BB19B162C1000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850BA19B162C1000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850BC19B162C1000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>E52850BD19B162C1000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850BC19B162C1000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850BE19B162C1000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>E52850BF19B162C1000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850BE19B162C1000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850C019B162C1000EEEB0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E52850C919B162C1000EEEB0</string>
-				<string>E52850CA19B162C1000EEEB0</string>
-				<string>E52850CC19B162C1000EEEB0</string>
-				<string>E52850CF19B162C1000EEEB0</string>
-				<string>E52850D219B162C1000EEEB0</string>
-				<string>E52850D319B162C2000EEEB0</string>
-				<string>E52850D519B162C2000EEEB0</string>
-				<string>E52850C119B162C1000EEEB0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BubbleTracks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850C119B162C1000EEEB0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E52850C219B162C1000EEEB0</string>
-				<string>E52850C319B162C1000EEEB0</string>
-				<string>E52850C619B162C1000EEEB0</string>
-				<string>E52850C819B162C1000EEEB0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850C219B162C1000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>BubbleTracks-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850C319B162C1000EEEB0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E52850C419B162C1000EEEB0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850C419B162C1000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850C519B162C1000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850C319B162C1000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850C619B162C1000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850C719B162C1000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850C619B162C1000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850C819B162C1000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BubbleTracks-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850C919B162C1000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850CA19B162C1000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850CB19B162C1000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850CA19B162C1000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850CC19B162C1000EEEB0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E52850CD19B162C1000EEEB0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850CD19B162C1000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850CE19B162C1000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850CC19B162C1000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850CF19B162C1000EEEB0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E52850D019B162C1000EEEB0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850D019B162C1000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850D119B162C1000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850CF19B162C1000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850D219B162C1000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850D319B162C2000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850D419B162C2000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850D319B162C2000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850D519B162C2000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E52850D619B162C2000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850D519B162C2000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850D719B162C2000EEEB0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E52850D819B162C2000EEEB0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E52850DD19B162C2000EEEB0</string>
-				<string>E52850DF19B162C2000EEEB0</string>
-				<string>E52850DE19B162C2000EEEB0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E52850D919B162C2000EEEB0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E52850DA19B162C2000EEEB0</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E52850EF19B162C2000EEEB0</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E52850D719B162C2000EEEB0</string>
-				<string>E52850D819B162C2000EEEB0</string>
-				<string>E52850D919B162C2000EEEB0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E52850E119B162C2000EEEB0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BubbleTracksTests</string>
-			<key>productName</key>
-			<string>BubbleTracksTests</string>
-			<key>productReference</key>
-			<string>E52850DB19B162C2000EEEB0</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>E52850DB19B162C2000EEEB0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BubbleTracksTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E52850DC19B162C2000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>E52850DD19B162C2000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850DC19B162C2000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850DE19B162C2000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850BA19B162C1000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850DF19B162C2000EEEB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E52850BE19B162C1000EEEB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E52850E019B162C2000EEEB0</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E52850AF19B162C1000EEEB0</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E52850B619B162C1000EEEB0</string>
-			<key>remoteInfo</key>
-			<string>BubbleTracks</string>
-		</dict>
-		<key>E52850E119B162C2000EEEB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>E52850B619B162C1000EEEB0</string>
-			<key>targetProxy</key>
-			<string>E52850E019B162C2000EEEB0</string>
-		</dict>
-		<key>E52850EA19B162C2000EEEB0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E52850EB19B162C2000EEEB0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E52850EC19B162C2000EEEB0</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E52850ED19B162C2000EEEB0</string>
-				<string>E52850EE19B162C2000EEEB0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E52850ED19B162C2000EEEB0</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5DB8ABF3BF414C9A94C460EB</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BubbleTracks/BubbleTracks-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BubbleTracks/BubbleTracks-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E52850EE19B162C2000EEEB0</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5DB8ABF3BF414C9A94C460EB</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BubbleTracks/BubbleTracks-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BubbleTracks/BubbleTracks-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E52850EF19B162C2000EEEB0</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E52850F019B162C2000EEEB0</string>
-				<string>E52850F119B162C2000EEEB0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E52850F019B162C2000EEEB0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/BubbleTracks.app/BubbleTracks</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BubbleTracks/BubbleTracks-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>BubbleTracksTests/BubbleTracksTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E52850F119B162C2000EEEB0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/BubbleTracks.app/BubbleTracks</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BubbleTracks/BubbleTracks-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BubbleTracksTests/BubbleTracksTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>E52850AF19B162C1000EEEB0</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13F68FBAA7904C47BB1C92F2 /* libPods-BubbleTracks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4C3C434D7143D696FB42FB /* libPods-BubbleTracks.a */; };
+		E52850BB19B162C1000EEEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52850BA19B162C1000EEEB0 /* Foundation.framework */; };
+		E52850BD19B162C1000EEEB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52850BC19B162C1000EEEB0 /* CoreGraphics.framework */; };
+		E52850BF19B162C1000EEEB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52850BE19B162C1000EEEB0 /* UIKit.framework */; };
+		E52850C519B162C1000EEEB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E52850C319B162C1000EEEB0 /* InfoPlist.strings */; };
+		E52850C719B162C1000EEEB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E52850C619B162C1000EEEB0 /* main.m */; };
+		E52850CB19B162C1000EEEB0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E52850CA19B162C1000EEEB0 /* AppDelegate.mm */; };
+		E52850CE19B162C1000EEEB0 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52850CC19B162C1000EEEB0 /* Main_iPhone.storyboard */; };
+		E52850D119B162C1000EEEB0 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52850CF19B162C1000EEEB0 /* Main_iPad.storyboard */; };
+		E52850D419B162C2000EEEB0 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E52850D319B162C2000EEEB0 /* ViewController.mm */; };
+		E52850D619B162C2000EEEB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52850D519B162C2000EEEB0 /* Images.xcassets */; };
+		E52850DD19B162C2000EEEB0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52850DC19B162C2000EEEB0 /* XCTest.framework */; };
+		E52850DE19B162C2000EEEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52850BA19B162C1000EEEB0 /* Foundation.framework */; };
+		E52850DF19B162C2000EEEB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52850BE19B162C1000EEEB0 /* UIKit.framework */; };
+		E528510319B16A93000EEEB0 /* AudioUnitWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E52850F619B16A93000EEEB0 /* AudioUnitWrapper.m */; };
+		E528510419B16A93000EEEB0 /* FXWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E52850F819B16A93000EEEB0 /* FXWrapper.m */; };
+		E528510519B16A93000EEEB0 /* TrackWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E52850FA19B16A93000EEEB0 /* TrackWrapper.m */; };
+		E528510619B16A93000EEEB0 /* BubbleFXView.m in Sources */ = {isa = PBXBuildFile; fileRef = E52850FC19B16A93000EEEB0 /* BubbleFXView.m */; };
+		E528510719B16A93000EEEB0 /* BubbleTrackView.m in Sources */ = {isa = PBXBuildFile; fileRef = E52850FE19B16A93000EEEB0 /* BubbleTrackView.m */; };
+		E528510819B16A93000EEEB0 /* BubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E528510019B16A93000EEEB0 /* BubbleView.m */; };
+		E528510919B16A93000EEEB0 /* LinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = E528510219B16A93000EEEB0 /* LinkView.m */; };
+		E528511519B16C6B000EEEB0 /* FileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E528511019B16C6B000EEEB0 /* FileParser.m */; };
+		E528511619B16C6B000EEEB0 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = E528511219B16C6B000EEEB0 /* Line.m */; };
+		E528511719B16C6B000EEEB0 /* ScaleFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = E528511419B16C6B000EEEB0 /* ScaleFunctions.m */; };
+		E528511B19B16CD6000EEEB0 /* MenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E528511A19B16CD6000EEEB0 /* MenuViewController.mm */; };
+		E528513919B16D86000EEEB0 /* bass001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528511C19B16D86000EEEB0 /* bass001.wav */; };
+		E528513A19B16D86000EEEB0 /* bass002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528511D19B16D86000EEEB0 /* bass002.wav */; };
+		E528513B19B16D86000EEEB0 /* bass003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528511E19B16D86000EEEB0 /* bass003.wav */; };
+		E528513C19B16D86000EEEB0 /* bass004.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528511F19B16D86000EEEB0 /* bass004.wav */; };
+		E528513D19B16D86000EEEB0 /* drums001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512019B16D86000EEEB0 /* drums001.wav */; };
+		E528513E19B16D86000EEEB0 /* drums002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512119B16D86000EEEB0 /* drums002.wav */; };
+		E528513F19B16D86000EEEB0 /* drums003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512219B16D86000EEEB0 /* drums003.wav */; };
+		E528514019B16D86000EEEB0 /* drums004.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512319B16D86000EEEB0 /* drums004.wav */; };
+		E528514119B16D86000EEEB0 /* lead001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512419B16D86000EEEB0 /* lead001.wav */; };
+		E528514219B16D86000EEEB0 /* lead002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512519B16D86000EEEB0 /* lead002.wav */; };
+		E528514319B16D86000EEEB0 /* lead003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512619B16D86000EEEB0 /* lead003.wav */; };
+		E528514419B16D86000EEEB0 /* lead004.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512719B16D86000EEEB0 /* lead004.wav */; };
+		E528514519B16D86000EEEB0 /* drums005.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512819B16D86000EEEB0 /* drums005.wav */; };
+		E528514619B16D86000EEEB0 /* fxlit_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512919B16D86000EEEB0 /* fxlit_green.png */; };
+		E528514719B16D86000EEEB0 /* fxlit_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512A19B16D86000EEEB0 /* fxlit_orange.png */; };
+		E528514819B16D86000EEEB0 /* fxlit_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512B19B16D86000EEEB0 /* fxlit_purple.png */; };
+		E528514919B16D86000EEEB0 /* fxlit_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512C19B16D86000EEEB0 /* fxlit_blue.png */; };
+		E528514A19B16D86000EEEB0 /* fx_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512D19B16D86000EEEB0 /* fx_green.png */; };
+		E528514B19B16D86000EEEB0 /* fx_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512E19B16D86000EEEB0 /* fx_orange.png */; };
+		E528514C19B16D86000EEEB0 /* fx_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512F19B16D86000EEEB0 /* fx_purple.png */; };
+		E528514D19B16D86000EEEB0 /* fx_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513019B16D86000EEEB0 /* fx_blue.png */; };
+		E528514E19B16D86000EEEB0 /* paused_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513119B16D86000EEEB0 /* paused_green.png */; };
+		E528514F19B16D86000EEEB0 /* paused_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513219B16D86000EEEB0 /* paused_blue.png */; };
+		E528515019B16D86000EEEB0 /* paused_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513319B16D86000EEEB0 /* paused_orange.png */; };
+		E528515119B16D86000EEEB0 /* paused_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513419B16D86000EEEB0 /* paused_purple.png */; };
+		E528515219B16D86000EEEB0 /* playing_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513519B16D86000EEEB0 /* playing_green.png */; };
+		E528515319B16D86000EEEB0 /* playing_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513619B16D86000EEEB0 /* playing_blue.png */; };
+		E528515419B16D86000EEEB0 /* playing_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513719B16D86000EEEB0 /* playing_orange.png */; };
+		E528515519B16D86000EEEB0 /* playing_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513819B16D86000EEEB0 /* playing_purple.png */; };
+		E528515B19B175CE000EEEB0 /* CustomNavigationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E528515A19B175CE000EEEB0 /* CustomNavigationViewController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E52850E019B162C2000EEEB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E52850AF19B162C1000EEEB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E52850B619B162C1000EEEB0;
+			remoteInfo = BubbleTracks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C4C3C434D7143D696FB42FB /* libPods-BubbleTracks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BubbleTracks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB8ABF3BF414C9A94C460EB /* Pods-BubbleTracks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleTracks.xcconfig"; path = "Pods/Pods-BubbleTracks.xcconfig"; sourceTree = "<group>"; };
+		E52850B719B162C1000EEEB0 /* BubbleTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52850BA19B162C1000EEEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E52850BC19B162C1000EEEB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E52850BE19B162C1000EEEB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E52850C219B162C1000EEEB0 /* BubbleTracks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BubbleTracks-Info.plist"; sourceTree = "<group>"; };
+		E52850C419B162C1000EEEB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E52850C619B162C1000EEEB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E52850C819B162C1000EEEB0 /* BubbleTracks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BubbleTracks-Prefix.pch"; sourceTree = "<group>"; };
+		E52850C919B162C1000EEEB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E52850CA19B162C1000EEEB0 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		E52850CD19B162C1000EEEB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		E52850D019B162C1000EEEB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		E52850D219B162C1000EEEB0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E52850D319B162C2000EEEB0 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		E52850D519B162C2000EEEB0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E52850DB19B162C2000EEEB0 /* BubbleTracksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubbleTracksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52850DC19B162C2000EEEB0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E52850F519B16A93000EEEB0 /* AudioUnitWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioUnitWrapper.h; sourceTree = "<group>"; };
+		E52850F619B16A93000EEEB0 /* AudioUnitWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioUnitWrapper.m; sourceTree = "<group>"; };
+		E52850F719B16A93000EEEB0 /* FXWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXWrapper.h; sourceTree = "<group>"; };
+		E52850F819B16A93000EEEB0 /* FXWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXWrapper.m; sourceTree = "<group>"; };
+		E52850F919B16A93000EEEB0 /* TrackWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackWrapper.h; sourceTree = "<group>"; };
+		E52850FA19B16A93000EEEB0 /* TrackWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackWrapper.m; sourceTree = "<group>"; };
+		E52850FB19B16A93000EEEB0 /* BubbleFXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleFXView.h; sourceTree = "<group>"; };
+		E52850FC19B16A93000EEEB0 /* BubbleFXView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleFXView.m; sourceTree = "<group>"; };
+		E52850FD19B16A93000EEEB0 /* BubbleTrackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleTrackView.h; sourceTree = "<group>"; };
+		E52850FE19B16A93000EEEB0 /* BubbleTrackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleTrackView.m; sourceTree = "<group>"; };
+		E52850FF19B16A93000EEEB0 /* BubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleView.h; sourceTree = "<group>"; };
+		E528510019B16A93000EEEB0 /* BubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleView.m; sourceTree = "<group>"; };
+		E528510119B16A93000EEEB0 /* LinkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkView.h; sourceTree = "<group>"; };
+		E528510219B16A93000EEEB0 /* LinkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkView.m; sourceTree = "<group>"; };
+		E528510F19B16C6B000EEEB0 /* FileParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileParser.h; sourceTree = "<group>"; };
+		E528511019B16C6B000EEEB0 /* FileParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileParser.m; sourceTree = "<group>"; };
+		E528511119B16C6B000EEEB0 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		E528511219B16C6B000EEEB0 /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		E528511319B16C6B000EEEB0 /* ScaleFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleFunctions.h; sourceTree = "<group>"; };
+		E528511419B16C6B000EEEB0 /* ScaleFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaleFunctions.m; sourceTree = "<group>"; };
+		E528511919B16CD6000EEEB0 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		E528511A19B16CD6000EEEB0 /* MenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MenuViewController.mm; sourceTree = "<group>"; };
+		E528511C19B16D86000EEEB0 /* bass001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass001.wav; sourceTree = "<group>"; };
+		E528511D19B16D86000EEEB0 /* bass002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass002.wav; sourceTree = "<group>"; };
+		E528511E19B16D86000EEEB0 /* bass003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass003.wav; sourceTree = "<group>"; };
+		E528511F19B16D86000EEEB0 /* bass004.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass004.wav; sourceTree = "<group>"; };
+		E528512019B16D86000EEEB0 /* drums001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums001.wav; sourceTree = "<group>"; };
+		E528512119B16D86000EEEB0 /* drums002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums002.wav; sourceTree = "<group>"; };
+		E528512219B16D86000EEEB0 /* drums003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums003.wav; sourceTree = "<group>"; };
+		E528512319B16D86000EEEB0 /* drums004.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums004.wav; sourceTree = "<group>"; };
+		E528512419B16D86000EEEB0 /* lead001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lead001.wav; sourceTree = "<group>"; };
+		E528512519B16D86000EEEB0 /* lead002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lead002.wav; sourceTree = "<group>"; };
+		E528512619B16D86000EEEB0 /* lead003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lead003.wav; sourceTree = "<group>"; };
+		E528512719B16D86000EEEB0 /* lead004.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lead004.wav; sourceTree = "<group>"; };
+		E528512819B16D86000EEEB0 /* drums005.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums005.wav; sourceTree = "<group>"; };
+		E528512919B16D86000EEEB0 /* fxlit_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fxlit_green.png; sourceTree = "<group>"; };
+		E528512A19B16D86000EEEB0 /* fxlit_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fxlit_orange.png; sourceTree = "<group>"; };
+		E528512B19B16D86000EEEB0 /* fxlit_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fxlit_purple.png; sourceTree = "<group>"; };
+		E528512C19B16D86000EEEB0 /* fxlit_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fxlit_blue.png; sourceTree = "<group>"; };
+		E528512D19B16D86000EEEB0 /* fx_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fx_green.png; sourceTree = "<group>"; };
+		E528512E19B16D86000EEEB0 /* fx_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fx_orange.png; sourceTree = "<group>"; };
+		E528512F19B16D86000EEEB0 /* fx_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fx_purple.png; sourceTree = "<group>"; };
+		E528513019B16D86000EEEB0 /* fx_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fx_blue.png; sourceTree = "<group>"; };
+		E528513119B16D86000EEEB0 /* paused_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paused_green.png; sourceTree = "<group>"; };
+		E528513219B16D86000EEEB0 /* paused_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paused_blue.png; sourceTree = "<group>"; };
+		E528513319B16D86000EEEB0 /* paused_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paused_orange.png; sourceTree = "<group>"; };
+		E528513419B16D86000EEEB0 /* paused_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paused_purple.png; sourceTree = "<group>"; };
+		E528513519B16D86000EEEB0 /* playing_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playing_green.png; sourceTree = "<group>"; };
+		E528513619B16D86000EEEB0 /* playing_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playing_blue.png; sourceTree = "<group>"; };
+		E528513719B16D86000EEEB0 /* playing_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playing_orange.png; sourceTree = "<group>"; };
+		E528513819B16D86000EEEB0 /* playing_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playing_purple.png; sourceTree = "<group>"; };
+		E528515919B175CE000EEEB0 /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
+		E528515A19B175CE000EEEB0 /* CustomNavigationViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomNavigationViewController.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E52850B419B162C1000EEEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52850BD19B162C1000EEEB0 /* CoreGraphics.framework in Frameworks */,
+				E52850BF19B162C1000EEEB0 /* UIKit.framework in Frameworks */,
+				E52850BB19B162C1000EEEB0 /* Foundation.framework in Frameworks */,
+				13F68FBAA7904C47BB1C92F2 /* libPods-BubbleTracks.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52850D819B162C2000EEEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52850DD19B162C2000EEEB0 /* XCTest.framework in Frameworks */,
+				E52850DF19B162C2000EEEB0 /* UIKit.framework in Frameworks */,
+				E52850DE19B162C2000EEEB0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E52850AE19B162C1000EEEB0 = {
+			isa = PBXGroup;
+			children = (
+				E52850C019B162C1000EEEB0 /* BubbleTracks */,
+				E52850B919B162C1000EEEB0 /* Frameworks */,
+				E52850B819B162C1000EEEB0 /* Products */,
+				5DB8ABF3BF414C9A94C460EB /* Pods-BubbleTracks.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		E52850B819B162C1000EEEB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E52850B719B162C1000EEEB0 /* BubbleTracks.app */,
+				E52850DB19B162C2000EEEB0 /* BubbleTracksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E52850B919B162C1000EEEB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E52850BA19B162C1000EEEB0 /* Foundation.framework */,
+				E52850BC19B162C1000EEEB0 /* CoreGraphics.framework */,
+				E52850BE19B162C1000EEEB0 /* UIKit.framework */,
+				E52850DC19B162C2000EEEB0 /* XCTest.framework */,
+				0C4C3C434D7143D696FB42FB /* libPods-BubbleTracks.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E52850C019B162C1000EEEB0 /* BubbleTracks */ = {
+			isa = PBXGroup;
+			children = (
+				E528511819B16C71000EEEB0 /* Utilities */,
+				E528510C19B16B68000EEEB0 /* Delegates */,
+				E528510E19B16C07000EEEB0 /* StoryBoards */,
+				E528510D19B16BFB000EEEB0 /* Wrappers */,
+				E528510A19B16B5A000EEEB0 /* Views */,
+				E528510B19B16B62000EEEB0 /* Controllers */,
+				E52850D519B162C2000EEEB0 /* Images.xcassets */,
+				E528515619B16D91000EEEB0 /* Resources */,
+				E52850C119B162C1000EEEB0 /* Supporting Files */,
+			);
+			path = BubbleTracks;
+			sourceTree = "<group>";
+		};
+		E52850C119B162C1000EEEB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E52850C219B162C1000EEEB0 /* BubbleTracks-Info.plist */,
+				E52850C319B162C1000EEEB0 /* InfoPlist.strings */,
+				E52850C619B162C1000EEEB0 /* main.m */,
+				E52850C819B162C1000EEEB0 /* BubbleTracks-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E528510A19B16B5A000EEEB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E52850FB19B16A93000EEEB0 /* BubbleFXView.h */,
+				E52850FC19B16A93000EEEB0 /* BubbleFXView.m */,
+				E52850FD19B16A93000EEEB0 /* BubbleTrackView.h */,
+				E52850FE19B16A93000EEEB0 /* BubbleTrackView.m */,
+				E52850FF19B16A93000EEEB0 /* BubbleView.h */,
+				E528510019B16A93000EEEB0 /* BubbleView.m */,
+				E528510119B16A93000EEEB0 /* LinkView.h */,
+				E528510219B16A93000EEEB0 /* LinkView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E528510B19B16B62000EEEB0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E528515919B175CE000EEEB0 /* CustomNavigationViewController.h */,
+				E528515A19B175CE000EEEB0 /* CustomNavigationViewController.mm */,
+				E528511919B16CD6000EEEB0 /* MenuViewController.h */,
+				E528511A19B16CD6000EEEB0 /* MenuViewController.mm */,
+				E52850D219B162C1000EEEB0 /* ViewController.h */,
+				E52850D319B162C2000EEEB0 /* ViewController.mm */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E528510C19B16B68000EEEB0 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E52850C919B162C1000EEEB0 /* AppDelegate.h */,
+				E52850CA19B162C1000EEEB0 /* AppDelegate.mm */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		E528510D19B16BFB000EEEB0 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				E52850F519B16A93000EEEB0 /* AudioUnitWrapper.h */,
+				E52850F619B16A93000EEEB0 /* AudioUnitWrapper.m */,
+				E52850F719B16A93000EEEB0 /* FXWrapper.h */,
+				E52850F819B16A93000EEEB0 /* FXWrapper.m */,
+				E52850F919B16A93000EEEB0 /* TrackWrapper.h */,
+				E52850FA19B16A93000EEEB0 /* TrackWrapper.m */,
+			);
+			name = Wrappers;
+			sourceTree = "<group>";
+		};
+		E528510E19B16C07000EEEB0 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				E52850CC19B162C1000EEEB0 /* Main_iPhone.storyboard */,
+				E52850CF19B162C1000EEEB0 /* Main_iPad.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		E528511819B16C71000EEEB0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E528510F19B16C6B000EEEB0 /* FileParser.h */,
+				E528511019B16C6B000EEEB0 /* FileParser.m */,
+				E528511119B16C6B000EEEB0 /* Line.h */,
+				E528511219B16C6B000EEEB0 /* Line.m */,
+				E528511319B16C6B000EEEB0 /* ScaleFunctions.h */,
+				E528511419B16C6B000EEEB0 /* ScaleFunctions.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		E528515619B16D91000EEEB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E528515719B16D9B000EEEB0 /* audioloops */,
+				E528515819B16DAD000EEEB0 /* png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E528515719B16D9B000EEEB0 /* audioloops */ = {
+			isa = PBXGroup;
+			children = (
+				E528511C19B16D86000EEEB0 /* bass001.wav */,
+				E528511D19B16D86000EEEB0 /* bass002.wav */,
+				E528511E19B16D86000EEEB0 /* bass003.wav */,
+				E528511F19B16D86000EEEB0 /* bass004.wav */,
+				E528512019B16D86000EEEB0 /* drums001.wav */,
+				E528512119B16D86000EEEB0 /* drums002.wav */,
+				E528512219B16D86000EEEB0 /* drums003.wav */,
+				E528512319B16D86000EEEB0 /* drums004.wav */,
+				E528512419B16D86000EEEB0 /* lead001.wav */,
+				E528512519B16D86000EEEB0 /* lead002.wav */,
+				E528512619B16D86000EEEB0 /* lead003.wav */,
+				E528512719B16D86000EEEB0 /* lead004.wav */,
+				E528512819B16D86000EEEB0 /* drums005.wav */,
+			);
+			name = audioloops;
+			sourceTree = "<group>";
+		};
+		E528515819B16DAD000EEEB0 /* png */ = {
+			isa = PBXGroup;
+			children = (
+				E528512919B16D86000EEEB0 /* fxlit_green.png */,
+				E528512A19B16D86000EEEB0 /* fxlit_orange.png */,
+				E528512B19B16D86000EEEB0 /* fxlit_purple.png */,
+				E528512C19B16D86000EEEB0 /* fxlit_blue.png */,
+				E528512D19B16D86000EEEB0 /* fx_green.png */,
+				E528512E19B16D86000EEEB0 /* fx_orange.png */,
+				E528512F19B16D86000EEEB0 /* fx_purple.png */,
+				E528513019B16D86000EEEB0 /* fx_blue.png */,
+				E528513119B16D86000EEEB0 /* paused_green.png */,
+				E528513219B16D86000EEEB0 /* paused_blue.png */,
+				E528513319B16D86000EEEB0 /* paused_orange.png */,
+				E528513419B16D86000EEEB0 /* paused_purple.png */,
+				E528513519B16D86000EEEB0 /* playing_green.png */,
+				E528513619B16D86000EEEB0 /* playing_blue.png */,
+				E528513719B16D86000EEEB0 /* playing_orange.png */,
+				E528513819B16D86000EEEB0 /* playing_purple.png */,
+			);
+			name = png;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E52850B619B162C1000EEEB0 /* BubbleTracks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E52850EC19B162C2000EEEB0 /* Build configuration list for PBXNativeTarget "BubbleTracks" */;
+			buildPhases = (
+				ACFBE41373CB46D099D60953 /* Check Pods Manifest.lock */,
+				E52850B319B162C1000EEEB0 /* Sources */,
+				E52850B419B162C1000EEEB0 /* Frameworks */,
+				E52850B519B162C1000EEEB0 /* Resources */,
+				4F910F0D228E44FD9CA3A216 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BubbleTracks;
+			productName = BubbleTracks;
+			productReference = E52850B719B162C1000EEEB0 /* BubbleTracks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E52850DA19B162C2000EEEB0 /* BubbleTracksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E52850EF19B162C2000EEEB0 /* Build configuration list for PBXNativeTarget "BubbleTracksTests" */;
+			buildPhases = (
+				E52850D719B162C2000EEEB0 /* Sources */,
+				E52850D819B162C2000EEEB0 /* Frameworks */,
+				E52850D919B162C2000EEEB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E52850E119B162C2000EEEB0 /* PBXTargetDependency */,
+			);
+			name = BubbleTracksTests;
+			productName = BubbleTracksTests;
+			productReference = E52850DB19B162C2000EEEB0 /* BubbleTracksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E52850AF19B162C1000EEEB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = julestestard;
+				TargetAttributes = {
+					E52850DA19B162C2000EEEB0 = {
+						TestTargetID = E52850B619B162C1000EEEB0;
+					};
+				};
+			};
+			buildConfigurationList = E52850B219B162C1000EEEB0 /* Build configuration list for PBXProject "BubbleTracks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E52850AE19B162C1000EEEB0;
+			productRefGroup = E52850B819B162C1000EEEB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E52850B619B162C1000EEEB0 /* BubbleTracks */,
+				E52850DA19B162C2000EEEB0 /* BubbleTracksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E52850B519B162C1000EEEB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E528513A19B16D86000EEEB0 /* bass002.wav in Resources */,
+				E528514419B16D86000EEEB0 /* lead004.wav in Resources */,
+				E528514119B16D86000EEEB0 /* lead001.wav in Resources */,
+				E528514E19B16D86000EEEB0 /* paused_green.png in Resources */,
+				E528515219B16D86000EEEB0 /* playing_green.png in Resources */,
+				E528514519B16D86000EEEB0 /* drums005.wav in Resources */,
+				E528513919B16D86000EEEB0 /* bass001.wav in Resources */,
+				E528514619B16D86000EEEB0 /* fxlit_green.png in Resources */,
+				E528514319B16D86000EEEB0 /* lead003.wav in Resources */,
+				E52850D119B162C1000EEEB0 /* Main_iPad.storyboard in Resources */,
+				E528513E19B16D86000EEEB0 /* drums002.wav in Resources */,
+				E528513B19B16D86000EEEB0 /* bass003.wav in Resources */,
+				E528513F19B16D86000EEEB0 /* drums003.wav in Resources */,
+				E528514F19B16D86000EEEB0 /* paused_blue.png in Resources */,
+				E528513D19B16D86000EEEB0 /* drums001.wav in Resources */,
+				E528514019B16D86000EEEB0 /* drums004.wav in Resources */,
+				E528515319B16D86000EEEB0 /* playing_blue.png in Resources */,
+				E528514C19B16D86000EEEB0 /* fx_purple.png in Resources */,
+				E528514D19B16D86000EEEB0 /* fx_blue.png in Resources */,
+				E528515019B16D86000EEEB0 /* paused_orange.png in Resources */,
+				E528515419B16D86000EEEB0 /* playing_orange.png in Resources */,
+				E528514819B16D86000EEEB0 /* fxlit_purple.png in Resources */,
+				E528513C19B16D86000EEEB0 /* bass004.wav in Resources */,
+				E528515519B16D86000EEEB0 /* playing_purple.png in Resources */,
+				E52850D619B162C2000EEEB0 /* Images.xcassets in Resources */,
+				E528514219B16D86000EEEB0 /* lead002.wav in Resources */,
+				E528514919B16D86000EEEB0 /* fxlit_blue.png in Resources */,
+				E528514B19B16D86000EEEB0 /* fx_orange.png in Resources */,
+				E528514719B16D86000EEEB0 /* fxlit_orange.png in Resources */,
+				E528514A19B16D86000EEEB0 /* fx_green.png in Resources */,
+				E528515119B16D86000EEEB0 /* paused_purple.png in Resources */,
+				E52850CE19B162C1000EEEB0 /* Main_iPhone.storyboard in Resources */,
+				E52850C519B162C1000EEEB0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52850D919B162C2000EEEB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F910F0D228E44FD9CA3A216 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BubbleTracks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACFBE41373CB46D099D60953 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E52850B319B162C1000EEEB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E528510419B16A93000EEEB0 /* FXWrapper.m in Sources */,
+				E528515B19B175CE000EEEB0 /* CustomNavigationViewController.mm in Sources */,
+				E52850D419B162C2000EEEB0 /* ViewController.mm in Sources */,
+				E528510919B16A93000EEEB0 /* LinkView.m in Sources */,
+				E528511619B16C6B000EEEB0 /* Line.m in Sources */,
+				E528510619B16A93000EEEB0 /* BubbleFXView.m in Sources */,
+				E528511719B16C6B000EEEB0 /* ScaleFunctions.m in Sources */,
+				E52850CB19B162C1000EEEB0 /* AppDelegate.mm in Sources */,
+				E528510519B16A93000EEEB0 /* TrackWrapper.m in Sources */,
+				E528511519B16C6B000EEEB0 /* FileParser.m in Sources */,
+				E528510819B16A93000EEEB0 /* BubbleView.m in Sources */,
+				E528510319B16A93000EEEB0 /* AudioUnitWrapper.m in Sources */,
+				E528510719B16A93000EEEB0 /* BubbleTrackView.m in Sources */,
+				E52850C719B162C1000EEEB0 /* main.m in Sources */,
+				E528511B19B16CD6000EEEB0 /* MenuViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52850D719B162C2000EEEB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E52850E119B162C2000EEEB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E52850B619B162C1000EEEB0 /* BubbleTracks */;
+			targetProxy = E52850E019B162C2000EEEB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E52850C319B162C1000EEEB0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E52850C419B162C1000EEEB0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E52850CC19B162C1000EEEB0 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E52850CD19B162C1000EEEB0 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E52850CF19B162C1000EEEB0 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E52850D019B162C1000EEEB0 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E52850EA19B162C2000EEEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E52850EB19B162C2000EEEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E52850ED19B162C2000EEEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DB8ABF3BF414C9A94C460EB /* Pods-BubbleTracks.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BubbleTracks/BubbleTracks-Prefix.pch";
+				INFOPLIST_FILE = "BubbleTracks/BubbleTracks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E52850EE19B162C2000EEEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DB8ABF3BF414C9A94C460EB /* Pods-BubbleTracks.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BubbleTracks/BubbleTracks-Prefix.pch";
+				INFOPLIST_FILE = "BubbleTracks/BubbleTracks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E52850F019B162C2000EEEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BubbleTracks.app/BubbleTracks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BubbleTracks/BubbleTracks-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BubbleTracksTests/BubbleTracksTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E52850F119B162C2000EEEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BubbleTracks.app/BubbleTracks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BubbleTracks/BubbleTracks-Prefix.pch";
+				INFOPLIST_FILE = "BubbleTracksTests/BubbleTracksTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E52850B219B162C1000EEEB0 /* Build configuration list for PBXProject "BubbleTracks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52850EA19B162C2000EEEB0 /* Debug */,
+				E52850EB19B162C2000EEEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E52850EC19B162C2000EEEB0 /* Build configuration list for PBXNativeTarget "BubbleTracks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52850ED19B162C2000EEEB0 /* Debug */,
+				E52850EE19B162C2000EEEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E52850EF19B162C2000EEEB0 /* Build configuration list for PBXNativeTarget "BubbleTracksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52850F019B162C2000EEEB0 /* Debug */,
+				E52850F119B162C2000EEEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E52850AF19B162C1000EEEB0 /* Project object */;
+}

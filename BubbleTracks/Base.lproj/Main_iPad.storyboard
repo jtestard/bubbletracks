@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="vTX-93-zOC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -16,10 +16,95 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="bZZ-DY-mmx" appends="YES" id="SbA-HD-8tt"/>
+                            <outletCollection property="gestureRecognizers" destination="nSs-Y6-Job" appends="YES" id="tTp-cT-4fg"/>
+                            <outletCollection property="gestureRecognizers" destination="g7k-Bd-Ik0" appends="YES" id="89s-er-PXL"/>
+                            <outletCollection property="gestureRecognizers" destination="Ovo-b1-cWa" appends="YES" id="Yqy-R4-5E4"/>
+                            <outletCollection property="gestureRecognizers" destination="j3Q-6W-Pqm" appends="YES" id="SfN-97-yJC"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="7bq-z5-HqR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bZZ-DY-mmx">
+                    <connections>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="G18-lG-lfO"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="3DH-hD-7zV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="nSs-Y6-Job">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="PdD-oz-8iI"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="yrb-Ob-heo"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="g7k-Bd-Ik0">
+                    <connections>
+                        <action selector="handleLongPress:" destination="BYZ-38-t0r" id="VjQ-6r-MTb"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="cH1-CG-ab9"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Ovo-b1-cWa">
+                    <connections>
+                        <action selector="handleSwipe:" destination="BYZ-38-t0r" id="mM1-ub-d9c"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="olT-G6-vTP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer numberOfTouchesRequired="2" id="j3Q-6W-Pqm">
+                    <connections>
+                        <action selector="handle2FingerTap:" destination="BYZ-38-t0r" id="efx-ZS-qvO"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="c2V-8K-t59"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1154" y="30"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Azr-11-Vjh">
+            <objects>
+                <tableViewController id="Vd8-c3-5zY" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gDF-f2-sb2">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="tdc-n8-jXc">
+                                <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tdc-n8-jXc" id="AxP-eJ-vaB">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Vd8-c3-5zY" id="zXJ-E3-Un8"/>
+                            <outlet property="delegate" destination="Vd8-c3-5zY" id="8Hn-QT-mA9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92a-Da-J7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2290" y="41"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6vo-TQ-LEP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vTX-93-zOC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jck-SI-NdP">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Hax-uw-NAz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2B-qw-w9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27" y="20"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
