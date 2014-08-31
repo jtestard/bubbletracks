@@ -152,7 +152,7 @@
             viewController = (ViewController*)[[self.navigationController viewControllers] objectAtIndex:0];
             // This audioUnit is a track.
             if (audioUnit.type==0) {
-                view = [viewController loadTrackFiles:name]; //XXX
+                [viewController loadTrackFiles:name]; //XXX
             // This audioUnit is a effect.                
             } else if (audioUnit.type==1) {
                 [viewController loadFXFiles:name];//XXX

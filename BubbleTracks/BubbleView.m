@@ -32,6 +32,7 @@ int const FX = 1;
     }
 }
 
+
 - (id) initWithName:(NSString *)aName Image:(UIImage *)image HighlightedImage:(UIImage *)highlightedImage Location:(CGPoint)location {
     self = [super initWithImage:image highlightedImage:highlightedImage];
     self.linkArray = [[NSMutableArray alloc] init];

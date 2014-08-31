@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BubbleTracks/ViewController.mm"
-            timestampString = "431141559.448931"
+            timestampString = "431151895.175133"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "299"
-            endingLineNumber = "299"
-            landmarkName = "-loadFXFiles:"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "-loadTrackFiles:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,22 +105,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BubbleTracks/ViewController.mm"
-            timestampString = "431141836.170251"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "323"
-            endingLineNumber = "323"
-            landmarkName = "-loadFXFiles:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "BubbleTracks/BubbleFXView.m"
             timestampString = "431142015.716002"
             startingColumnNumber = "9223372036854775807"
@@ -138,12 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BubbleTracks/ViewController.mm"
-            timestampString = "431142143.847472"
+            timestampString = "431151895.175133"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298"
-            landmarkName = "-loadFXFiles:"
+            startingLineNumber = "300"
+            endingLineNumber = "300"
+            landmarkName = "-loadTrackFiles:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -30,41 +30,63 @@
 		E528511619B16C6B000EEEB0 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = E528511219B16C6B000EEEB0 /* Line.m */; };
 		E528511719B16C6B000EEEB0 /* ScaleFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = E528511419B16C6B000EEEB0 /* ScaleFunctions.m */; };
 		E528511B19B16CD6000EEEB0 /* MenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E528511A19B16CD6000EEEB0 /* MenuViewController.mm */; };
-		E528513919B16D86000EEEB0 /* bass001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528511C19B16D86000EEEB0 /* bass001.wav */; };
-		E528513A19B16D86000EEEB0 /* bass002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528511D19B16D86000EEEB0 /* bass002.wav */; };
-		E528513B19B16D86000EEEB0 /* bass003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528511E19B16D86000EEEB0 /* bass003.wav */; };
-		E528513C19B16D86000EEEB0 /* bass004.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528511F19B16D86000EEEB0 /* bass004.wav */; };
-		E528513D19B16D86000EEEB0 /* drums001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512019B16D86000EEEB0 /* drums001.wav */; };
-		E528513E19B16D86000EEEB0 /* drums002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512119B16D86000EEEB0 /* drums002.wav */; };
-		E528513F19B16D86000EEEB0 /* drums003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512219B16D86000EEEB0 /* drums003.wav */; };
-		E528514019B16D86000EEEB0 /* drums004.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512319B16D86000EEEB0 /* drums004.wav */; };
-		E528514119B16D86000EEEB0 /* lead001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512419B16D86000EEEB0 /* lead001.wav */; };
-		E528514219B16D86000EEEB0 /* lead002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512519B16D86000EEEB0 /* lead002.wav */; };
-		E528514319B16D86000EEEB0 /* lead003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512619B16D86000EEEB0 /* lead003.wav */; };
-		E528514419B16D86000EEEB0 /* lead004.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512719B16D86000EEEB0 /* lead004.wav */; };
-		E528514519B16D86000EEEB0 /* drums005.wav in Resources */ = {isa = PBXBuildFile; fileRef = E528512819B16D86000EEEB0 /* drums005.wav */; };
-		E528514619B16D86000EEEB0 /* fxlit_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512919B16D86000EEEB0 /* fxlit_green.png */; };
-		E528514719B16D86000EEEB0 /* fxlit_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512A19B16D86000EEEB0 /* fxlit_orange.png */; };
-		E528514819B16D86000EEEB0 /* fxlit_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512B19B16D86000EEEB0 /* fxlit_purple.png */; };
-		E528514919B16D86000EEEB0 /* fxlit_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512C19B16D86000EEEB0 /* fxlit_blue.png */; };
-		E528514A19B16D86000EEEB0 /* fx_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512D19B16D86000EEEB0 /* fx_green.png */; };
-		E528514B19B16D86000EEEB0 /* fx_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512E19B16D86000EEEB0 /* fx_orange.png */; };
-		E528514C19B16D86000EEEB0 /* fx_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = E528512F19B16D86000EEEB0 /* fx_purple.png */; };
-		E528514D19B16D86000EEEB0 /* fx_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513019B16D86000EEEB0 /* fx_blue.png */; };
-		E528514E19B16D86000EEEB0 /* paused_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513119B16D86000EEEB0 /* paused_green.png */; };
-		E528514F19B16D86000EEEB0 /* paused_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513219B16D86000EEEB0 /* paused_blue.png */; };
-		E528515019B16D86000EEEB0 /* paused_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513319B16D86000EEEB0 /* paused_orange.png */; };
-		E528515119B16D86000EEEB0 /* paused_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513419B16D86000EEEB0 /* paused_purple.png */; };
-		E528515219B16D86000EEEB0 /* playing_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513519B16D86000EEEB0 /* playing_green.png */; };
-		E528515319B16D86000EEEB0 /* playing_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513619B16D86000EEEB0 /* playing_blue.png */; };
-		E528515419B16D86000EEEB0 /* playing_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513719B16D86000EEEB0 /* playing_orange.png */; };
-		E528515519B16D86000EEEB0 /* playing_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = E528513819B16D86000EEEB0 /* playing_purple.png */; };
 		E528515B19B175CE000EEEB0 /* CustomNavigationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E528515A19B175CE000EEEB0 /* CustomNavigationViewController.mm */; };
-		E5D4B7A419B27B3800D5052C /* exoticBeat05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5D4B79F19B27B3800D5052C /* exoticBeat05.mp3 */; };
-		E5D4B7A519B27B3800D5052C /* funkyElectricGuitar03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5D4B7A019B27B3800D5052C /* funkyElectricGuitar03.mp3 */; };
-		E5D4B7A619B27B3800D5052C /* LatinBassCombination.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5D4B7A119B27B3800D5052C /* LatinBassCombination.mp3 */; };
-		E5D4B7A719B27B3800D5052C /* roundLatinBass06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5D4B7A219B27B3800D5052C /* roundLatinBass06.mp3 */; };
-		E5D4B7A819B27B3800D5052C /* woodyLatinBass01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5D4B7A319B27B3800D5052C /* woodyLatinBass01.mp3 */; };
+		E58CE73319B2D9290022438B /* bass001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72119B2D9290022438B /* bass001.wav */; };
+		E58CE73419B2D9290022438B /* bass002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72219B2D9290022438B /* bass002.wav */; };
+		E58CE73519B2D9290022438B /* bass003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72319B2D9290022438B /* bass003.wav */; };
+		E58CE73619B2D9290022438B /* bass004.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72419B2D9290022438B /* bass004.wav */; };
+		E58CE73719B2D9290022438B /* drums001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72519B2D9290022438B /* drums001.wav */; };
+		E58CE73819B2D9290022438B /* drums002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72619B2D9290022438B /* drums002.wav */; };
+		E58CE73919B2D9290022438B /* drums003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72719B2D9290022438B /* drums003.wav */; };
+		E58CE73A19B2D9290022438B /* drums004.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72819B2D9290022438B /* drums004.wav */; };
+		E58CE73B19B2D9290022438B /* drums005.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72919B2D9290022438B /* drums005.wav */; };
+		E58CE73C19B2D9290022438B /* exoticBeat05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72A19B2D9290022438B /* exoticBeat05.mp3 */; };
+		E58CE73D19B2D9290022438B /* funkyElectricGuitar03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72B19B2D9290022438B /* funkyElectricGuitar03.mp3 */; };
+		E58CE73E19B2D9290022438B /* LatinBassCombination.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72C19B2D9290022438B /* LatinBassCombination.mp3 */; };
+		E58CE73F19B2D9290022438B /* lead001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72D19B2D9290022438B /* lead001.wav */; };
+		E58CE74019B2D9290022438B /* lead002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72E19B2D9290022438B /* lead002.wav */; };
+		E58CE74119B2D9290022438B /* lead003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72F19B2D9290022438B /* lead003.wav */; };
+		E58CE74219B2D9290022438B /* lead004.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE73019B2D9290022438B /* lead004.wav */; };
+		E58CE74319B2D9290022438B /* roundLatinBass06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E58CE73119B2D9290022438B /* roundLatinBass06.mp3 */; };
+		E58CE74419B2D9290022438B /* woodyLatinBass01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E58CE73219B2D9290022438B /* woodyLatinBass01.mp3 */; };
+		E58CE75519B2D9400022438B /* fx_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE74519B2D9400022438B /* fx_blue.png */; };
+		E58CE75619B2D9400022438B /* fx_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE74619B2D9400022438B /* fx_green.png */; };
+		E58CE75719B2D9400022438B /* fx_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE74719B2D9400022438B /* fx_orange.png */; };
+		E58CE75819B2D9400022438B /* fx_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE74819B2D9400022438B /* fx_purple.png */; };
+		E58CE75919B2D9400022438B /* fxlit_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE74919B2D9400022438B /* fxlit_blue.png */; };
+		E58CE75A19B2D9400022438B /* fxlit_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE74A19B2D9400022438B /* fxlit_green.png */; };
+		E58CE75B19B2D9400022438B /* fxlit_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE74B19B2D9400022438B /* fxlit_orange.png */; };
+		E58CE75C19B2D9400022438B /* fxlit_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE74C19B2D9400022438B /* fxlit_purple.png */; };
+		E58CE75D19B2D9400022438B /* paused_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE74D19B2D9400022438B /* paused_blue.png */; };
+		E58CE75E19B2D9400022438B /* paused_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE74E19B2D9400022438B /* paused_green.png */; };
+		E58CE75F19B2D9400022438B /* paused_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE74F19B2D9400022438B /* paused_orange.png */; };
+		E58CE76019B2D9400022438B /* paused_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE75019B2D9400022438B /* paused_purple.png */; };
+		E58CE76119B2D9400022438B /* playing_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE75119B2D9400022438B /* playing_blue.png */; };
+		E58CE76219B2D9400022438B /* playing_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE75219B2D9400022438B /* playing_green.png */; };
+		E58CE76319B2D9400022438B /* playing_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE75319B2D9400022438B /* playing_orange.png */; };
+		E58CE76419B2D9400022438B /* playing_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = E58CE75419B2D9400022438B /* playing_purple.png */; };
+		E5BF632719B2E2D00090D511 /* 70BalladDrums01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631119B2E2D00090D511 /* 70BalladDrums01.mp3 */; };
+		E5BF632819B2E2D00090D511 /* 70BalladPiano1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631219B2E2D00090D511 /* 70BalladPiano1.mp3 */; };
+		E5BF632919B2E2D00090D511 /* 70BalladPiano2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631319B2E2D00090D511 /* 70BalladPiano2.mp3 */; };
+		E5BF632A19B2E2D00090D511 /* 70BalladPiano3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631419B2E2D00090D511 /* 70BalladPiano3.mp3 */; };
+		E5BF632B19B2E2D00090D511 /* 70BalladPiano4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631519B2E2D00090D511 /* 70BalladPiano4.mp3 */; };
+		E5BF632C19B2E2D00090D511 /* 70BalladPiano5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631619B2E2D00090D511 /* 70BalladPiano5.mp3 */; };
+		E5BF632D19B2E2D00090D511 /* 80PopBeat07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631719B2E2D00090D511 /* 80PopBeat07.mp3 */; };
+		E5BF632E19B2E2D00090D511 /* 80PopBeat08.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631819B2E2D00090D511 /* 80PopBeat08.mp3 */; };
+		E5BF632F19B2E2D00090D511 /* 80PopBeat09.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631919B2E2D00090D511 /* 80PopBeat09.mp3 */; };
+		E5BF633019B2E2D00090D511 /* 80PopBeat10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631A19B2E2D00090D511 /* 80PopBeat10.mp3 */; };
+		E5BF633119B2E2D00090D511 /* AcousticPicking07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631B19B2E2D00090D511 /* AcousticPicking07.mp3 */; };
+		E5BF633219B2E2D00090D511 /* AcousticPicking09.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631C19B2E2D00090D511 /* AcousticPicking09.mp3 */; };
+		E5BF633319B2E2D00090D511 /* AcousticPicking12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631D19B2E2D00090D511 /* AcousticPicking12.mp3 */; };
+		E5BF633419B2E2D00090D511 /* AcousticPicking20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631E19B2E2D00090D511 /* AcousticPicking20.mp3 */; };
+		E5BF633519B2E2D00090D511 /* AlternativeRockBass03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF631F19B2E2D00090D511 /* AlternativeRockBass03.mp3 */; };
+		E5BF633619B2E2D00090D511 /* AlternativeRockBass04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF632019B2E2D00090D511 /* AlternativeRockBass04.mp3 */; };
+		E5BF633719B2E2D00090D511 /* AmbientGuitar01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF632119B2E2D00090D511 /* AmbientGuitar01.mp3 */; };
+		E5BF633819B2E2D00090D511 /* BluesGuitar02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF632219B2E2D00090D511 /* BluesGuitar02.mp3 */; };
+		E5BF633919B2E2D00090D511 /* BluesHarmonica09.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF632319B2E2D00090D511 /* BluesHarmonica09.mp3 */; };
+		E5BF633A19B2E2D00090D511 /* BluesHarmonica10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF632419B2E2D00090D511 /* BluesHarmonica10.mp3 */; };
+		E5BF633B19B2E2D00090D511 /* ClassickRockBeat01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF632519B2E2D00090D511 /* ClassickRockBeat01.mp3 */; };
+		E5BF633C19B2E2D00090D511 /* ClassickRockBeat02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF632619B2E2D00090D511 /* ClassickRockBeat02.mp3 */; };
 		E5D4B7AB19B27BE300D5052C /* AudioMixer.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7AA19B27BE300D5052C /* AudioMixer.mm */; };
 		E5D4B7AD19B2816700D5052C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E5D4B7AC19B2816700D5052C /* README.md */; };
 		E5D4B7B019B285DE00D5052C /* AudioEffect.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7AF19B285DE00D5052C /* AudioEffect.mm */; };
@@ -126,42 +148,64 @@
 		E528511419B16C6B000EEEB0 /* ScaleFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaleFunctions.m; sourceTree = "<group>"; };
 		E528511919B16CD6000EEEB0 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		E528511A19B16CD6000EEEB0 /* MenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MenuViewController.mm; sourceTree = "<group>"; };
-		E528511C19B16D86000EEEB0 /* bass001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass001.wav; sourceTree = "<group>"; };
-		E528511D19B16D86000EEEB0 /* bass002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass002.wav; sourceTree = "<group>"; };
-		E528511E19B16D86000EEEB0 /* bass003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass003.wav; sourceTree = "<group>"; };
-		E528511F19B16D86000EEEB0 /* bass004.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass004.wav; sourceTree = "<group>"; };
-		E528512019B16D86000EEEB0 /* drums001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums001.wav; sourceTree = "<group>"; };
-		E528512119B16D86000EEEB0 /* drums002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums002.wav; sourceTree = "<group>"; };
-		E528512219B16D86000EEEB0 /* drums003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums003.wav; sourceTree = "<group>"; };
-		E528512319B16D86000EEEB0 /* drums004.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums004.wav; sourceTree = "<group>"; };
-		E528512419B16D86000EEEB0 /* lead001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lead001.wav; sourceTree = "<group>"; };
-		E528512519B16D86000EEEB0 /* lead002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lead002.wav; sourceTree = "<group>"; };
-		E528512619B16D86000EEEB0 /* lead003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lead003.wav; sourceTree = "<group>"; };
-		E528512719B16D86000EEEB0 /* lead004.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lead004.wav; sourceTree = "<group>"; };
-		E528512819B16D86000EEEB0 /* drums005.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums005.wav; sourceTree = "<group>"; };
-		E528512919B16D86000EEEB0 /* fxlit_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fxlit_green.png; sourceTree = "<group>"; };
-		E528512A19B16D86000EEEB0 /* fxlit_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fxlit_orange.png; sourceTree = "<group>"; };
-		E528512B19B16D86000EEEB0 /* fxlit_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fxlit_purple.png; sourceTree = "<group>"; };
-		E528512C19B16D86000EEEB0 /* fxlit_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fxlit_blue.png; sourceTree = "<group>"; };
-		E528512D19B16D86000EEEB0 /* fx_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fx_green.png; sourceTree = "<group>"; };
-		E528512E19B16D86000EEEB0 /* fx_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fx_orange.png; sourceTree = "<group>"; };
-		E528512F19B16D86000EEEB0 /* fx_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fx_purple.png; sourceTree = "<group>"; };
-		E528513019B16D86000EEEB0 /* fx_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fx_blue.png; sourceTree = "<group>"; };
-		E528513119B16D86000EEEB0 /* paused_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paused_green.png; sourceTree = "<group>"; };
-		E528513219B16D86000EEEB0 /* paused_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paused_blue.png; sourceTree = "<group>"; };
-		E528513319B16D86000EEEB0 /* paused_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paused_orange.png; sourceTree = "<group>"; };
-		E528513419B16D86000EEEB0 /* paused_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paused_purple.png; sourceTree = "<group>"; };
-		E528513519B16D86000EEEB0 /* playing_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playing_green.png; sourceTree = "<group>"; };
-		E528513619B16D86000EEEB0 /* playing_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playing_blue.png; sourceTree = "<group>"; };
-		E528513719B16D86000EEEB0 /* playing_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playing_orange.png; sourceTree = "<group>"; };
-		E528513819B16D86000EEEB0 /* playing_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playing_purple.png; sourceTree = "<group>"; };
 		E528515919B175CE000EEEB0 /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
 		E528515A19B175CE000EEEB0 /* CustomNavigationViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomNavigationViewController.mm; sourceTree = "<group>"; };
-		E5D4B79F19B27B3800D5052C /* exoticBeat05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exoticBeat05.mp3; sourceTree = "<group>"; };
-		E5D4B7A019B27B3800D5052C /* funkyElectricGuitar03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = funkyElectricGuitar03.mp3; sourceTree = "<group>"; };
-		E5D4B7A119B27B3800D5052C /* LatinBassCombination.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LatinBassCombination.mp3; sourceTree = "<group>"; };
-		E5D4B7A219B27B3800D5052C /* roundLatinBass06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = roundLatinBass06.mp3; sourceTree = "<group>"; };
-		E5D4B7A319B27B3800D5052C /* woodyLatinBass01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = woodyLatinBass01.mp3; sourceTree = "<group>"; };
+		E58CE72119B2D9290022438B /* bass001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bass001.wav; path = audioloops/bass001.wav; sourceTree = "<group>"; };
+		E58CE72219B2D9290022438B /* bass002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bass002.wav; path = audioloops/bass002.wav; sourceTree = "<group>"; };
+		E58CE72319B2D9290022438B /* bass003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bass003.wav; path = audioloops/bass003.wav; sourceTree = "<group>"; };
+		E58CE72419B2D9290022438B /* bass004.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bass004.wav; path = audioloops/bass004.wav; sourceTree = "<group>"; };
+		E58CE72519B2D9290022438B /* drums001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = drums001.wav; path = audioloops/drums001.wav; sourceTree = "<group>"; };
+		E58CE72619B2D9290022438B /* drums002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = drums002.wav; path = audioloops/drums002.wav; sourceTree = "<group>"; };
+		E58CE72719B2D9290022438B /* drums003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = drums003.wav; path = audioloops/drums003.wav; sourceTree = "<group>"; };
+		E58CE72819B2D9290022438B /* drums004.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = drums004.wav; path = audioloops/drums004.wav; sourceTree = "<group>"; };
+		E58CE72919B2D9290022438B /* drums005.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = drums005.wav; path = audioloops/drums005.wav; sourceTree = "<group>"; };
+		E58CE72A19B2D9290022438B /* exoticBeat05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = exoticBeat05.mp3; path = audioloops/exoticBeat05.mp3; sourceTree = "<group>"; };
+		E58CE72B19B2D9290022438B /* funkyElectricGuitar03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = funkyElectricGuitar03.mp3; path = audioloops/funkyElectricGuitar03.mp3; sourceTree = "<group>"; };
+		E58CE72C19B2D9290022438B /* LatinBassCombination.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = LatinBassCombination.mp3; path = audioloops/LatinBassCombination.mp3; sourceTree = "<group>"; };
+		E58CE72D19B2D9290022438B /* lead001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = lead001.wav; path = audioloops/lead001.wav; sourceTree = "<group>"; };
+		E58CE72E19B2D9290022438B /* lead002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = lead002.wav; path = audioloops/lead002.wav; sourceTree = "<group>"; };
+		E58CE72F19B2D9290022438B /* lead003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = lead003.wav; path = audioloops/lead003.wav; sourceTree = "<group>"; };
+		E58CE73019B2D9290022438B /* lead004.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = lead004.wav; path = audioloops/lead004.wav; sourceTree = "<group>"; };
+		E58CE73119B2D9290022438B /* roundLatinBass06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = roundLatinBass06.mp3; path = audioloops/roundLatinBass06.mp3; sourceTree = "<group>"; };
+		E58CE73219B2D9290022438B /* woodyLatinBass01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = woodyLatinBass01.mp3; path = audioloops/woodyLatinBass01.mp3; sourceTree = "<group>"; };
+		E58CE74519B2D9400022438B /* fx_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fx_blue.png; path = images/fx_blue.png; sourceTree = "<group>"; };
+		E58CE74619B2D9400022438B /* fx_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fx_green.png; path = images/fx_green.png; sourceTree = "<group>"; };
+		E58CE74719B2D9400022438B /* fx_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fx_orange.png; path = images/fx_orange.png; sourceTree = "<group>"; };
+		E58CE74819B2D9400022438B /* fx_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fx_purple.png; path = images/fx_purple.png; sourceTree = "<group>"; };
+		E58CE74919B2D9400022438B /* fxlit_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fxlit_blue.png; path = images/fxlit_blue.png; sourceTree = "<group>"; };
+		E58CE74A19B2D9400022438B /* fxlit_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fxlit_green.png; path = images/fxlit_green.png; sourceTree = "<group>"; };
+		E58CE74B19B2D9400022438B /* fxlit_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fxlit_orange.png; path = images/fxlit_orange.png; sourceTree = "<group>"; };
+		E58CE74C19B2D9400022438B /* fxlit_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fxlit_purple.png; path = images/fxlit_purple.png; sourceTree = "<group>"; };
+		E58CE74D19B2D9400022438B /* paused_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paused_blue.png; path = images/paused_blue.png; sourceTree = "<group>"; };
+		E58CE74E19B2D9400022438B /* paused_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paused_green.png; path = images/paused_green.png; sourceTree = "<group>"; };
+		E58CE74F19B2D9400022438B /* paused_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paused_orange.png; path = images/paused_orange.png; sourceTree = "<group>"; };
+		E58CE75019B2D9400022438B /* paused_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paused_purple.png; path = images/paused_purple.png; sourceTree = "<group>"; };
+		E58CE75119B2D9400022438B /* playing_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playing_blue.png; path = images/playing_blue.png; sourceTree = "<group>"; };
+		E58CE75219B2D9400022438B /* playing_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playing_green.png; path = images/playing_green.png; sourceTree = "<group>"; };
+		E58CE75319B2D9400022438B /* playing_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playing_orange.png; path = images/playing_orange.png; sourceTree = "<group>"; };
+		E58CE75419B2D9400022438B /* playing_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playing_purple.png; path = images/playing_purple.png; sourceTree = "<group>"; };
+		E5BF631119B2E2D00090D511 /* 70BalladDrums01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 70BalladDrums01.mp3; sourceTree = "<group>"; };
+		E5BF631219B2E2D00090D511 /* 70BalladPiano1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 70BalladPiano1.mp3; sourceTree = "<group>"; };
+		E5BF631319B2E2D00090D511 /* 70BalladPiano2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 70BalladPiano2.mp3; sourceTree = "<group>"; };
+		E5BF631419B2E2D00090D511 /* 70BalladPiano3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 70BalladPiano3.mp3; sourceTree = "<group>"; };
+		E5BF631519B2E2D00090D511 /* 70BalladPiano4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 70BalladPiano4.mp3; sourceTree = "<group>"; };
+		E5BF631619B2E2D00090D511 /* 70BalladPiano5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 70BalladPiano5.mp3; sourceTree = "<group>"; };
+		E5BF631719B2E2D00090D511 /* 80PopBeat07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 80PopBeat07.mp3; sourceTree = "<group>"; };
+		E5BF631819B2E2D00090D511 /* 80PopBeat08.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 80PopBeat08.mp3; sourceTree = "<group>"; };
+		E5BF631919B2E2D00090D511 /* 80PopBeat09.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 80PopBeat09.mp3; sourceTree = "<group>"; };
+		E5BF631A19B2E2D00090D511 /* 80PopBeat10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 80PopBeat10.mp3; sourceTree = "<group>"; };
+		E5BF631B19B2E2D00090D511 /* AcousticPicking07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AcousticPicking07.mp3; sourceTree = "<group>"; };
+		E5BF631C19B2E2D00090D511 /* AcousticPicking09.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AcousticPicking09.mp3; sourceTree = "<group>"; };
+		E5BF631D19B2E2D00090D511 /* AcousticPicking12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AcousticPicking12.mp3; sourceTree = "<group>"; };
+		E5BF631E19B2E2D00090D511 /* AcousticPicking20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AcousticPicking20.mp3; sourceTree = "<group>"; };
+		E5BF631F19B2E2D00090D511 /* AlternativeRockBass03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AlternativeRockBass03.mp3; sourceTree = "<group>"; };
+		E5BF632019B2E2D00090D511 /* AlternativeRockBass04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AlternativeRockBass04.mp3; sourceTree = "<group>"; };
+		E5BF632119B2E2D00090D511 /* AmbientGuitar01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AmbientGuitar01.mp3; sourceTree = "<group>"; };
+		E5BF632219B2E2D00090D511 /* BluesGuitar02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluesGuitar02.mp3; sourceTree = "<group>"; };
+		E5BF632319B2E2D00090D511 /* BluesHarmonica09.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluesHarmonica09.mp3; sourceTree = "<group>"; };
+		E5BF632419B2E2D00090D511 /* BluesHarmonica10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluesHarmonica10.mp3; sourceTree = "<group>"; };
+		E5BF632519B2E2D00090D511 /* ClassickRockBeat01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ClassickRockBeat01.mp3; sourceTree = "<group>"; };
+		E5BF632619B2E2D00090D511 /* ClassickRockBeat02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ClassickRockBeat02.mp3; sourceTree = "<group>"; };
 		E5D4B7A919B27BE300D5052C /* AudioMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioMixer.h; sourceTree = "<group>"; };
 		E5D4B7AA19B27BE300D5052C /* AudioMixer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioMixer.mm; sourceTree = "<group>"; };
 		E5D4B7AC19B2816700D5052C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -340,24 +384,46 @@
 		E528515719B16D9B000EEEB0 /* audioloops */ = {
 			isa = PBXGroup;
 			children = (
-				E528511C19B16D86000EEEB0 /* bass001.wav */,
-				E528511D19B16D86000EEEB0 /* bass002.wav */,
-				E528511E19B16D86000EEEB0 /* bass003.wav */,
-				E528511F19B16D86000EEEB0 /* bass004.wav */,
-				E528512019B16D86000EEEB0 /* drums001.wav */,
-				E528512119B16D86000EEEB0 /* drums002.wav */,
-				E5D4B79F19B27B3800D5052C /* exoticBeat05.mp3 */,
-				E5D4B7A019B27B3800D5052C /* funkyElectricGuitar03.mp3 */,
-				E5D4B7A119B27B3800D5052C /* LatinBassCombination.mp3 */,
-				E5D4B7A219B27B3800D5052C /* roundLatinBass06.mp3 */,
-				E5D4B7A319B27B3800D5052C /* woodyLatinBass01.mp3 */,
-				E528512219B16D86000EEEB0 /* drums003.wav */,
-				E528512319B16D86000EEEB0 /* drums004.wav */,
-				E528512419B16D86000EEEB0 /* lead001.wav */,
-				E528512519B16D86000EEEB0 /* lead002.wav */,
-				E528512619B16D86000EEEB0 /* lead003.wav */,
-				E528512719B16D86000EEEB0 /* lead004.wav */,
-				E528512819B16D86000EEEB0 /* drums005.wav */,
+				E5BF631119B2E2D00090D511 /* 70BalladDrums01.mp3 */,
+				E5BF631219B2E2D00090D511 /* 70BalladPiano1.mp3 */,
+				E5BF631319B2E2D00090D511 /* 70BalladPiano2.mp3 */,
+				E5BF631419B2E2D00090D511 /* 70BalladPiano3.mp3 */,
+				E5BF631519B2E2D00090D511 /* 70BalladPiano4.mp3 */,
+				E5BF631619B2E2D00090D511 /* 70BalladPiano5.mp3 */,
+				E5BF631719B2E2D00090D511 /* 80PopBeat07.mp3 */,
+				E5BF631819B2E2D00090D511 /* 80PopBeat08.mp3 */,
+				E5BF631919B2E2D00090D511 /* 80PopBeat09.mp3 */,
+				E5BF631A19B2E2D00090D511 /* 80PopBeat10.mp3 */,
+				E5BF631B19B2E2D00090D511 /* AcousticPicking07.mp3 */,
+				E5BF631C19B2E2D00090D511 /* AcousticPicking09.mp3 */,
+				E5BF631D19B2E2D00090D511 /* AcousticPicking12.mp3 */,
+				E5BF631E19B2E2D00090D511 /* AcousticPicking20.mp3 */,
+				E5BF631F19B2E2D00090D511 /* AlternativeRockBass03.mp3 */,
+				E5BF632019B2E2D00090D511 /* AlternativeRockBass04.mp3 */,
+				E5BF632119B2E2D00090D511 /* AmbientGuitar01.mp3 */,
+				E5BF632219B2E2D00090D511 /* BluesGuitar02.mp3 */,
+				E5BF632319B2E2D00090D511 /* BluesHarmonica09.mp3 */,
+				E5BF632419B2E2D00090D511 /* BluesHarmonica10.mp3 */,
+				E5BF632519B2E2D00090D511 /* ClassickRockBeat01.mp3 */,
+				E5BF632619B2E2D00090D511 /* ClassickRockBeat02.mp3 */,
+				E58CE72119B2D9290022438B /* bass001.wav */,
+				E58CE72219B2D9290022438B /* bass002.wav */,
+				E58CE72319B2D9290022438B /* bass003.wav */,
+				E58CE72419B2D9290022438B /* bass004.wav */,
+				E58CE72519B2D9290022438B /* drums001.wav */,
+				E58CE72619B2D9290022438B /* drums002.wav */,
+				E58CE72719B2D9290022438B /* drums003.wav */,
+				E58CE72819B2D9290022438B /* drums004.wav */,
+				E58CE72919B2D9290022438B /* drums005.wav */,
+				E58CE72A19B2D9290022438B /* exoticBeat05.mp3 */,
+				E58CE72B19B2D9290022438B /* funkyElectricGuitar03.mp3 */,
+				E58CE72C19B2D9290022438B /* LatinBassCombination.mp3 */,
+				E58CE72D19B2D9290022438B /* lead001.wav */,
+				E58CE72E19B2D9290022438B /* lead002.wav */,
+				E58CE72F19B2D9290022438B /* lead003.wav */,
+				E58CE73019B2D9290022438B /* lead004.wav */,
+				E58CE73119B2D9290022438B /* roundLatinBass06.mp3 */,
+				E58CE73219B2D9290022438B /* woodyLatinBass01.mp3 */,
 			);
 			name = audioloops;
 			sourceTree = "<group>";
@@ -365,22 +431,22 @@
 		E528515819B16DAD000EEEB0 /* png */ = {
 			isa = PBXGroup;
 			children = (
-				E528512919B16D86000EEEB0 /* fxlit_green.png */,
-				E528512A19B16D86000EEEB0 /* fxlit_orange.png */,
-				E528512B19B16D86000EEEB0 /* fxlit_purple.png */,
-				E528512C19B16D86000EEEB0 /* fxlit_blue.png */,
-				E528512D19B16D86000EEEB0 /* fx_green.png */,
-				E528512E19B16D86000EEEB0 /* fx_orange.png */,
-				E528512F19B16D86000EEEB0 /* fx_purple.png */,
-				E528513019B16D86000EEEB0 /* fx_blue.png */,
-				E528513119B16D86000EEEB0 /* paused_green.png */,
-				E528513219B16D86000EEEB0 /* paused_blue.png */,
-				E528513319B16D86000EEEB0 /* paused_orange.png */,
-				E528513419B16D86000EEEB0 /* paused_purple.png */,
-				E528513519B16D86000EEEB0 /* playing_green.png */,
-				E528513619B16D86000EEEB0 /* playing_blue.png */,
-				E528513719B16D86000EEEB0 /* playing_orange.png */,
-				E528513819B16D86000EEEB0 /* playing_purple.png */,
+				E58CE74519B2D9400022438B /* fx_blue.png */,
+				E58CE74619B2D9400022438B /* fx_green.png */,
+				E58CE74719B2D9400022438B /* fx_orange.png */,
+				E58CE74819B2D9400022438B /* fx_purple.png */,
+				E58CE74919B2D9400022438B /* fxlit_blue.png */,
+				E58CE74A19B2D9400022438B /* fxlit_green.png */,
+				E58CE74B19B2D9400022438B /* fxlit_orange.png */,
+				E58CE74C19B2D9400022438B /* fxlit_purple.png */,
+				E58CE74D19B2D9400022438B /* paused_blue.png */,
+				E58CE74E19B2D9400022438B /* paused_green.png */,
+				E58CE74F19B2D9400022438B /* paused_orange.png */,
+				E58CE75019B2D9400022438B /* paused_purple.png */,
+				E58CE75119B2D9400022438B /* playing_blue.png */,
+				E58CE75219B2D9400022438B /* playing_green.png */,
+				E58CE75319B2D9400022438B /* playing_orange.png */,
+				E58CE75419B2D9400022438B /* playing_purple.png */,
 			);
 			name = png;
 			sourceTree = "<group>";
@@ -497,43 +563,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E528513A19B16D86000EEEB0 /* bass002.wav in Resources */,
-				E528514419B16D86000EEEB0 /* lead004.wav in Resources */,
-				E528514119B16D86000EEEB0 /* lead001.wav in Resources */,
-				E528514E19B16D86000EEEB0 /* paused_green.png in Resources */,
-				E5D4B7A619B27B3800D5052C /* LatinBassCombination.mp3 in Resources */,
-				E528515219B16D86000EEEB0 /* playing_green.png in Resources */,
-				E528514519B16D86000EEEB0 /* drums005.wav in Resources */,
-				E528513919B16D86000EEEB0 /* bass001.wav in Resources */,
-				E528514619B16D86000EEEB0 /* fxlit_green.png in Resources */,
-				E528514319B16D86000EEEB0 /* lead003.wav in Resources */,
-				E528513E19B16D86000EEEB0 /* drums002.wav in Resources */,
-				E528513B19B16D86000EEEB0 /* bass003.wav in Resources */,
-				E528513F19B16D86000EEEB0 /* drums003.wav in Resources */,
-				E528514F19B16D86000EEEB0 /* paused_blue.png in Resources */,
-				E528513D19B16D86000EEEB0 /* drums001.wav in Resources */,
-				E528514019B16D86000EEEB0 /* drums004.wav in Resources */,
-				E528515319B16D86000EEEB0 /* playing_blue.png in Resources */,
-				E528514C19B16D86000EEEB0 /* fx_purple.png in Resources */,
-				E528514D19B16D86000EEEB0 /* fx_blue.png in Resources */,
-				E528515019B16D86000EEEB0 /* paused_orange.png in Resources */,
-				E5D4B7A519B27B3800D5052C /* funkyElectricGuitar03.mp3 in Resources */,
-				E528515419B16D86000EEEB0 /* playing_orange.png in Resources */,
-				E5D4B7A719B27B3800D5052C /* roundLatinBass06.mp3 in Resources */,
-				E528514819B16D86000EEEB0 /* fxlit_purple.png in Resources */,
-				E528513C19B16D86000EEEB0 /* bass004.wav in Resources */,
-				E528515519B16D86000EEEB0 /* playing_purple.png in Resources */,
+				E5BF633619B2E2D00090D511 /* AlternativeRockBass04.mp3 in Resources */,
+				E5BF632B19B2E2D00090D511 /* 70BalladPiano4.mp3 in Resources */,
+				E5BF632919B2E2D00090D511 /* 70BalladPiano2.mp3 in Resources */,
+				E5BF633219B2E2D00090D511 /* AcousticPicking09.mp3 in Resources */,
+				E5BF633A19B2E2D00090D511 /* BluesHarmonica10.mp3 in Resources */,
+				E5BF633719B2E2D00090D511 /* AmbientGuitar01.mp3 in Resources */,
+				E58CE73A19B2D9290022438B /* drums004.wav in Resources */,
+				E58CE75F19B2D9400022438B /* paused_orange.png in Resources */,
+				E58CE75719B2D9400022438B /* fx_orange.png in Resources */,
+				E58CE75519B2D9400022438B /* fx_blue.png in Resources */,
 				E52850D619B162C2000EEEB0 /* Images.xcassets in Resources */,
-				E528514219B16D86000EEEB0 /* lead002.wav in Resources */,
-				E528514919B16D86000EEEB0 /* fxlit_blue.png in Resources */,
+				E58CE73319B2D9290022438B /* bass001.wav in Resources */,
+				E58CE75C19B2D9400022438B /* fxlit_purple.png in Resources */,
+				E58CE75819B2D9400022438B /* fx_purple.png in Resources */,
+				E5BF633019B2E2D00090D511 /* 80PopBeat10.mp3 in Resources */,
+				E58CE76119B2D9400022438B /* playing_blue.png in Resources */,
 				E5D4B7AD19B2816700D5052C /* README.md in Resources */,
-				E528514B19B16D86000EEEB0 /* fx_orange.png in Resources */,
-				E5D4B7A419B27B3800D5052C /* exoticBeat05.mp3 in Resources */,
-				E528514719B16D86000EEEB0 /* fxlit_orange.png in Resources */,
-				E528514A19B16D86000EEEB0 /* fx_green.png in Resources */,
-				E528515119B16D86000EEEB0 /* paused_purple.png in Resources */,
-				E5D4B7A819B27B3800D5052C /* woodyLatinBass01.mp3 in Resources */,
+				E5BF633919B2E2D00090D511 /* BluesHarmonica09.mp3 in Resources */,
+				E5BF633419B2E2D00090D511 /* AcousticPicking20.mp3 in Resources */,
+				E58CE73B19B2D9290022438B /* drums005.wav in Resources */,
+				E58CE75D19B2D9400022438B /* paused_blue.png in Resources */,
+				E58CE73C19B2D9290022438B /* exoticBeat05.mp3 in Resources */,
+				E58CE75619B2D9400022438B /* fx_green.png in Resources */,
+				E5BF632719B2E2D00090D511 /* 70BalladDrums01.mp3 in Resources */,
+				E5BF632A19B2E2D00090D511 /* 70BalladPiano3.mp3 in Resources */,
+				E5BF633819B2E2D00090D511 /* BluesGuitar02.mp3 in Resources */,
+				E58CE74119B2D9290022438B /* lead003.wav in Resources */,
+				E58CE74419B2D9290022438B /* woodyLatinBass01.mp3 in Resources */,
+				E58CE76019B2D9400022438B /* paused_purple.png in Resources */,
+				E58CE73E19B2D9290022438B /* LatinBassCombination.mp3 in Resources */,
+				E58CE73519B2D9290022438B /* bass003.wav in Resources */,
+				E58CE76219B2D9400022438B /* playing_green.png in Resources */,
+				E58CE73819B2D9290022438B /* drums002.wav in Resources */,
+				E5BF633119B2E2D00090D511 /* AcousticPicking07.mp3 in Resources */,
+				E5BF633C19B2E2D00090D511 /* ClassickRockBeat02.mp3 in Resources */,
+				E58CE75919B2D9400022438B /* fxlit_blue.png in Resources */,
+				E58CE76419B2D9400022438B /* playing_purple.png in Resources */,
+				E5BF632819B2E2D00090D511 /* 70BalladPiano1.mp3 in Resources */,
+				E58CE75E19B2D9400022438B /* paused_green.png in Resources */,
+				E5BF633319B2E2D00090D511 /* AcousticPicking12.mp3 in Resources */,
+				E58CE73D19B2D9290022438B /* funkyElectricGuitar03.mp3 in Resources */,
+				E58CE76319B2D9400022438B /* playing_orange.png in Resources */,
+				E58CE73719B2D9290022438B /* drums001.wav in Resources */,
 				E52850C519B162C1000EEEB0 /* InfoPlist.strings in Resources */,
+				E5BF632F19B2E2D00090D511 /* 80PopBeat09.mp3 in Resources */,
+				E58CE73419B2D9290022438B /* bass002.wav in Resources */,
+				E5BF633B19B2E2D00090D511 /* ClassickRockBeat01.mp3 in Resources */,
+				E58CE74019B2D9290022438B /* lead002.wav in Resources */,
+				E58CE73919B2D9290022438B /* drums003.wav in Resources */,
+				E58CE74219B2D9290022438B /* lead004.wav in Resources */,
+				E5BF632C19B2E2D00090D511 /* 70BalladPiano5.mp3 in Resources */,
+				E58CE75A19B2D9400022438B /* fxlit_green.png in Resources */,
+				E5BF633519B2E2D00090D511 /* AlternativeRockBass03.mp3 in Resources */,
+				E5BF632D19B2E2D00090D511 /* 80PopBeat07.mp3 in Resources */,
+				E58CE74319B2D9290022438B /* roundLatinBass06.mp3 in Resources */,
+				E5BF632E19B2E2D00090D511 /* 80PopBeat08.mp3 in Resources */,
+				E58CE75B19B2D9400022438B /* fxlit_orange.png in Resources */,
+				E58CE73F19B2D9290022438B /* lead001.wav in Resources */,
+				E58CE73619B2D9290022438B /* bass004.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,17 +19,17 @@
 
 -(id) init;
 
--(void) addTrack:(NSString*) nameWithExtension;
--(void) removeTrack:(NSString*) nameWithExtension;
+-(BOOL) addTrack:(NSString*) nameWithExtension;
+-(BOOL) removeTrack:(NSString*) nameWithExtension;
 -(void) unmuteTrack:(NSString*) nameWithExtension;
 -(void) muteTrack:(NSString*) nameWithExtension;
--(void) addEffect:(NSString*) effectName;
--(void) removeEffect:(NSString*) effectName;
+-(BOOL) addEffect:(NSString*) effectName;
+-(BOOL) removeEffect:(NSString*) effectName;
 -(void) enableEffect:(NSString*) effectName;
 -(void) disableEffect:(NSString*) effectName;
 -(void) recordTime;
 -(BOOL) linkTrack:(NSString*) track toEffect:(NSString*) effect;
 -(BOOL) unlinkTrack:(NSString*) track toEffect:(NSString*) effect;
-- (void) modifyEffect:(NSString*)effectName X:(Float32) x Y:(Float32) y;
+- (BOOL) modifyEffect:(NSString*)effectName X:(Float32) x Y:(Float32) y;
 
 @end

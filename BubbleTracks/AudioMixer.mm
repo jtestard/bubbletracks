@@ -69,7 +69,7 @@ UInt32 tolerance;
 }
 
 
--(void) addTrack:(NSString*) nameWithExtension {
+-(BOOL) addTrack:(NSString*) nameWithExtension {
     if (![self.filePlayers objectForKey:nameWithExtension]) {
         AudioTrack* audioTrack = [[AudioTrack alloc] initWithName:nameWithExtension andController:self.controller];
         while(!(quantizeRegion-tolerance <= rateIndex && rateIndex <= quantizeRegion+tolerance)){
@@ -77,18 +77,21 @@ UInt32 tolerance;
         }
         [self.controller addChannels:@[audioTrack.player]];
         self.filePlayers[nameWithExtension] = audioTrack;
+        return YES;
     } else {
         NSLog(@"Trying to add the file %@, but this file is already being played. This is not possible yet.",nameWithExtension);
+        return NO;
     }
 }
 
--(void) removeTrack:(NSString*) nameWithExtension {
+-(BOOL) removeTrack:(NSString*) nameWithExtension {
     AudioTrack* audioTrack = (AudioTrack*) self.filePlayers[nameWithExtension];
     AEAudioFilePlayer* player = audioTrack.player;
     [self.controller removeChannels:@[player]];
     [self.filePlayers removeObjectForKey:nameWithExtension];
     player = nil;
     audioTrack = nil;
+    return YES;
 }
 
 -(void) unmuteTrack:(NSString*) nameWithExtension {
@@ -99,40 +102,50 @@ UInt32 tolerance;
     ((AudioTrack*) self.filePlayers[nameWithExtension]).player.channelIsMuted = YES;
 }
 
-- (void) modifyEffect:(NSString*)effectName X:(Float32) x Y:(Float32) y {
+- (BOOL) modifyEffect:(NSString*)effectName X:(Float32) x Y:(Float32) y {
     AudioEffect* effect = (AudioEffect*)[self.effects objectForKey:effectName];
     if (effect) {
         [effect modifyEffectX:x Y:y];
+        return YES;
     } else {
         NSLog(@"Trying to modify the effect %@, but it doesn't exist!",effectName);
+        return NO;
     }
 }
 
--(void) addEffect:(NSString*) effectName {
+-(BOOL) addEffect:(NSString*) effectName {
     if (![self.effects objectForKey:effectName]) {
         if ([effectName isEqualToString:@"BandPassFilter"]) {
             self.effects[effectName] = [[BandPassFilter alloc] initWithName:effectName andController:self.controller];
+            return YES;
         } else if ([effectName isEqualToString:@"Delay"]) {
             self.effects[effectName] = [[Delay alloc] initWithName:effectName andController:self.controller];
+            return YES;
         } else if ([effectName isEqualToString:@"HighPassFilter"]) {
             self.effects[effectName] = [[HighPassFilter alloc] initWithName:effectName andController:self.controller];
+            return YES;
         } else if ([effectName isEqualToString:@"LowPassFilter"]) {
             self.effects[effectName] = [[LowPassFilter alloc] initWithName:effectName andController:self.controller];
+            return YES;
         } else if ([effectName isEqualToString:@"Reverb"]) {
             self.effects[effectName] = [[Reverb alloc] initWithName:effectName andController:self.controller];
+            return YES;
         } else {
             NSLog(@"Trying to add the effect %@, but it is not recognized as a valid effect name.", effectName);
+            return NO;
         }
     } else {
         NSLog(@"Trying to add the effect %@, but this file is already being played. This is not possible yet.",effectName);
+        return NO;
     }
 }
 
--(void) removeEffect:(NSString*) effectName {
+-(BOOL) removeEffect:(NSString*) effectName {
     AudioEffect* effect = (AudioEffect*) [self.effects objectForKey:effectName];
     [self.controller removeFilter:effect.filter];
     [self.effects removeObjectForKey:effectName];
     effect = nil;
+    return YES;
 }
 
 -(void) enableEffect:(NSString*) effectName {

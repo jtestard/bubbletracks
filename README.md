@@ -13,6 +13,7 @@
 3) Support for iTunes library samples.
 4) DSP-style Link visualization.
 5) Enhance support for large audio files.
+6) Improve overall performance by adding smooth audio buffering?
 
 ### Limitations 
 

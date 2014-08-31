@@ -262,7 +262,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (BubbleTrackView*) loadTrackFiles:(NSString*) name {
+- (BOOL) loadTrackFiles:(NSString*) name {
     NSString* colorString = nil;
     switch (color) {
         case 0:
@@ -285,14 +285,20 @@
     UIImage* img = [[UIImage alloc] initWithContentsOfFile:circle];
     UIImage* img_highlight = [[UIImage alloc] initWithContentsOfFile:circle_lit];
     BubbleTrackView* bubbleTrackView = [[BubbleTrackView alloc] initWithName:name Image:img HighlightedImage:img_highlight Location:lastTouched];
-    bubbleTrackView.color = colorString;
-    [bubblesArray addObject:bubbleTrackView];
-    [self.view addSubview:bubbleTrackView];
     //XXX Adds the track to the AudioMixer
-    [audioMixer addTrack:bubbleTrackView.audioTrackName];
-    //Change color regularily
-    color = (color + 1)%4;
-    return bubbleTrackView;
+    BOOL addedToMixer = [audioMixer addTrack:bubbleTrackView.audioTrackName];
+    if (addedToMixer) {
+        //Change color regularily
+        bubbleTrackView.color = colorString;
+        [bubblesArray addObject:bubbleTrackView];
+        [self.view addSubview:bubbleTrackView];
+        color = (color + 1)%4;
+        return YES;
+    } else {
+        [self createAlertMessage: @"You can't add twice the same track. This is a known bug that will be fixed soon."
+                       withTitle: @"Something Went Wrong!"];
+        return NO;
+    }
 }
 
 - (BOOL) loadFXFiles:(NSString*) name {
@@ -318,12 +324,18 @@
     UIImage* img = [[UIImage alloc] initWithContentsOfFile:circle];
     UIImage* img_highlight = [[UIImage alloc] initWithContentsOfFile:circle_lit];
     BubbleFXView * bubbleFXView = [[BubbleFXView alloc] initWithName:name Image:img HighlightedImage:img_highlight Location:lastTouched];
-    [bubblesArray addObject:bubbleFXView];
-    [self.view addSubview:bubbleFXView];
     //XXX Adds the effect to the AudioMixer
-    [audioMixer addEffect:bubbleFXView.audioEffectName];
-    color = (color+1)%4;
-    return YES;
+    BOOL addedToMixer = [audioMixer addEffect:bubbleFXView.audioEffectName];
+    if (addedToMixer) {
+        [bubblesArray addObject:bubbleFXView];
+        [self.view addSubview:bubbleFXView];
+        color = (color+1)%4;
+        return YES;
+    } else {
+        [self createAlertMessage: @"You can't add twice the same effect. This is a known bug that will be fixed soon."
+                       withTitle: @"Something Went Wrong!"];
+        return NO;
+    }
 }
 
 - (void) createLinkWithFirstView:(BubbleView*) afirstView andSecondView:(BubbleView*) asecondView {
@@ -380,6 +392,16 @@
     view.center.y < self.view.frame.origin.y ||
     view.center.y > self.view.frame.origin.y + self.view.frame.size.height;
 }
+
+-(void) createAlertMessage:(NSString*)message withTitle:(NSString*)title {
+    UIAlertView * alert =[[UIAlertView alloc ] initWithTitle:title
+                                                     message:message
+                                                    delegate:self
+                                           cancelButtonTitle:@"OK"
+                                           otherButtonTitles: nil];
+    [alert show];
+}
+
 
 
 @end

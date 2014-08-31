@@ -36,6 +36,12 @@
       "scale" : "2x"
     },
     {
+      "size" : "72x72",
+      "idiom" : "ipad",
+      "filename" : "play_iconx.png",
+      "scale" : "1x"
+    },
+    {
       "idiom" : "ipad",
       "size" : "76x76",
       "scale" : "1x"

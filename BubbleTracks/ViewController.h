@@ -67,7 +67,7 @@
  This function loads the files for the bubble track view that has been selected. It lets us
  save space when we show the table. It also makes the views visible and playable.
  */
-- (BubbleTrackView*) loadTrackFiles:(NSString*) name;
+- (BOOL) loadTrackFiles:(NSString*) name;
 
 /**
  This function loads the files for the bubble effect view that has been selected. It lets us
@@ -96,6 +96,8 @@
  Checks if a bubble has exited the pond.
  */
 - (BOOL) didExitPond:(BubbleView*)view;
+
+-(void) createAlertMessage:(NSString*)message withTitle:(NSString*)title;
 
 
 @end
