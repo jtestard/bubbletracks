@@ -19,6 +19,7 @@
 #import "FileParser.h"
 #import "Line.h"
 #import "ScaleFunctions.h"
+#import "AudioMixer.h"
 #import <vector>
 
 @interface ViewController () {
@@ -32,7 +33,7 @@
 
 @implementation ViewController
 
-@synthesize bubblesArray, lastTouched;
+@synthesize bubblesArray, lastTouched, audioMixer;
 
 - (void)viewDidLoad
 {
@@ -59,6 +60,9 @@
     [self.view addGestureRecognizer:longPressRecognizer];
     [self.view addGestureRecognizer:tapRecognizer];
     [self.view addGestureRecognizer:twoFingerTapRecognizer];
+    
+    //Initialize audio mixer
+    self.audioMixer = [[AudioMixer alloc] init];
     
     //Initialize table view controller. It is hidden at first.
     _controller = [[MenuViewController alloc] initWithStyle:UITableViewStylePlain];
@@ -131,7 +135,7 @@
                 // If the view is an effect
                 if (view.type==1) {
                     BubbleFXView* fxView = (BubbleFXView*) view;
-//                    [fxView.audioEffect modifyEffectX:translation.x Y:translation.y];
+                    [audioMixer modifyEffect:fxView.audioEffectName X:translation.x Y:translation.y];
                 }
                 [view updateFrameAndBounds:view.center];
                 //Handles sliding of bubbles and acceleration
@@ -156,16 +160,15 @@
                     if (view.type==TRACK) {
                         BubbleTrackView* trackView = (BubbleTrackView*) view;
                         [trackView removeAllLinks];
-//                        [self.audioMixer removeTrack:trackView.audioTrack.audioID];
+                        [self.audioMixer removeTrack:trackView.audioTrackName];
                         NSLog(@"Track bubble with no id has been removed...");
-//                        NSLog(@"Track bubble with id %d has been removed...", trackView.audioTrack.audioID);
+                        NSLog(@"Track bubble with name %@ has been removed...", trackView.audioTrackName);
                         // If view is an effect
                     } else if (view.type==FX){
                         BubbleFXView* fxView = (BubbleFXView*) view;
                         [fxView removeAllLinks];
-//                        [self.audioMixer removeEffect:fxView.audioEffect.fxID];
-                        NSLog(@"Effect bubble with no id has been removed...");
-//                        NSLog(@"Track bubble with id %d has been removed...", fxView.audioEffect.fxID);
+                        [self.audioMixer removeEffect:fxView.audioEffectName];
+                        NSLog(@"Effect bubble with name %@ has been removed...", fxView.audioEffectName);
                     }
                     
                     [view removeFromSuperview];
@@ -191,8 +194,8 @@
                 [linkView removeLink];
                 NSLog(@"%@",[[linkView.firstView linkArray] description]);
                 NSLog(@"%@",[[linkView.secondView linkArray] description]);
-//                [audioMixer unlinkTrack:linkView.firstView.audioTrack.audioID
-//                               toEffect:linkView.secondView.audioEffect.fxID];
+                [audioMixer unlinkTrack:linkView.firstView.audioTrackName
+                               toEffect:linkView.secondView.audioEffectName];
                 [linkView removeFromSuperview];
                 break;
             }
@@ -218,22 +221,22 @@
                 subView.highlighted = true;
                 if (subView.type==TRACK) {
                     BubbleTrackView* trackView = (BubbleTrackView*) subView;
-//                    [audioMixer playTrack:trackView.audioTrack.audioID];
+                    [audioMixer unmuteTrack:trackView.audioTrackName];
                 }
                 if (subView.type==FX) {
                     BubbleFXView* fxView = (BubbleFXView*) subView;
-//                    [audioMixer playEffect:fxView.audioEffect.fxID];
+                    [audioMixer enableEffect:fxView.audioEffectName];
                 }
                 
             } else {
                 subView.highlighted = false;
                 if (subView.type==TRACK) {
                     BubbleTrackView* trackView = (BubbleTrackView*) subView;
-//                    [audioMixer stopTrack:trackView.audioTrack.audioID];
+                    [audioMixer muteTrack:trackView.audioTrackName];
                 }
                 if (subView.type==FX) {
                     BubbleFXView* fxView = (BubbleFXView*) subView;
-//                    [audioMixer stopEffect:fxView.audioEffect.fxID];
+                    [audioMixer disableEffect:fxView.audioEffectName];
                 }
             }
         }
@@ -285,7 +288,8 @@
     bubbleTrackView.color = colorString;
     [bubblesArray addObject:bubbleTrackView];
     [self.view addSubview:bubbleTrackView];
-    
+    //XXX Adds the track to the AudioMixer
+    [audioMixer addTrack:bubbleTrackView.audioTrackName];
     //Change color regularily
     color = (color + 1)%4;
     return bubbleTrackView;
@@ -316,7 +320,8 @@
     BubbleFXView * bubbleFXView = [[BubbleFXView alloc] initWithName:name Image:img HighlightedImage:img_highlight Location:lastTouched];
     [bubblesArray addObject:bubbleFXView];
     [self.view addSubview:bubbleFXView];
-    //[self.audioMixer addEffect:bubbleFXView.audioEffect];
+    //XXX Adds the effect to the AudioMixer
+    [audioMixer addTrack:bubbleFXView.audioEffectName];
     color = (color+1)%4;
     return YES;
 }
@@ -333,7 +338,7 @@
                 [self.view sendSubviewToBack:link];
                 BubbleTrackView* trackView = (BubbleTrackView*)afirstView;
                 BubbleFXView* fxView = (BubbleFXView*) asecondView;
-                //[self.audioMixer linkTrack:trackView.audioTrack.audioID toEffect:fxView.audioEffect.fxID];
+                [self.audioMixer linkTrack:trackView.audioTrackName toEffect:fxView.audioEffectName];
                 NSLog(@"Link setup");
             }
         }
@@ -348,7 +353,7 @@
                 [self.view sendSubviewToBack:link];
                 BubbleTrackView* trackView = (BubbleTrackView*)asecondView;
                 BubbleFXView* fxView = (BubbleFXView*) afirstView;
-                //[self.audioMixer linkTrack:trackView.audioTrack.audioID toEffect:fxView.audioEffect.fxID];
+                [self.audioMixer linkTrack:trackView.audioTrackName toEffect:fxView.audioEffectName];
                 NSLog(@"Link setup");
             }
         }

@@ -20,8 +20,8 @@
     self.type = 0;
     self.frame = CGRectMake(location.x, location.y, 100, 100);
     self.bounds = CGRectMake(location.x, location.y, 100, 100);
-    self.center = CGPointMake(location.x+self.frame.size.width/2, location.y+self.frame.size.height/2);    
-    //self.audioTrack = [[AudioTrack alloc] initWithName:aName];
+    self.center = CGPointMake(location.x+self.frame.size.width/2, location.y+self.frame.size.height/2);
+    self.audioTrackName = name; // this will change XXX
     self.title = [[UILabel alloc] initWithFrame:CGRectMake(location.x+15, location.y+20, 70, 20)];
     [self.title setText:aName];
     [self.title setTextColor:[UIColor blackColor]];

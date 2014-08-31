@@ -10,7 +10,7 @@
 
 @implementation BubbleFXView
 
-//@synthesize audioEffect;
+@synthesize audioEffectName;
 
 - (id)initWithName:(NSString*)aName Image:(UIImage*)image HighlightedImage:(UIImage*)highlightedImage Location:(CGPoint)location{
     self = [super initWithImage:image highlightedImage:highlightedImage];
@@ -31,7 +31,7 @@
         NSLog(@"Error : unknown effect type : %@", aName);
         return self;
     }
-    //self.audioEffect = [[AudioEffect alloc] initWithType:fXType];
+    self.audioEffectName = name; //this will change XXX
     self.title = [[UILabel alloc] initWithFrame:CGRectMake(location.x+15, location.y+40, 70, 20)];
     [self.title setText:aName];
     [self.title setTextColor:[UIColor blackColor]];

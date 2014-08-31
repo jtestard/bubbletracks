@@ -16,11 +16,11 @@
     NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
     NSFileManager *fm = [NSFileManager defaultManager];    
     NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
-    NSPredicate *fltr = [NSPredicate predicateWithFormat:@"self ENDSWITH '.wav'"];
+    NSPredicate *fltr = [NSPredicate predicateWithFormat:@"self ENDSWITH '.mp3'"];
     NSArray *audiofiles = [dirContents filteredArrayUsingPredicate:fltr];    
     NSArray *names = audiofiles;
     NSMutableArray * trackUnitArray = [[NSMutableArray alloc] initWithCapacity:[names count]];
-    
+    //Needs to be replaced by a more thorough check.
     if (true) {
         for (int i = 0 ; i < [names count] ; i++) {
             TrackWrapper* trackWrapper = [[TrackWrapper alloc] initWithInstrument:@"loop" Name:[names objectAtIndex:i] Type:0];
@@ -33,8 +33,8 @@
 }
 
 - (NSMutableArray*) generatefXWrappers {
-    NSArray * fXNames = [NSArray arrayWithObjects:@"LowPassFilter",@"bandPassFilter",nil];
-    NSArray * fXTypes = [NSArray arrayWithObjects:@"filter",@"filter",nil];
+    NSArray * fXNames = [NSArray arrayWithObjects:@"Delay",@"HighPassFilter",@"Reverb",@"LowPassFilter",@"bandPassFilter",nil];
+    NSArray * fXTypes = [NSArray arrayWithObjects:@"filter",@"filter",@"filter",@"filter",@"filter",nil];
     NSMutableArray * fXUnitArray = [[NSMutableArray alloc] initWithCapacity:[fXNames count]];
     if ([fXNames count] == [fXTypes count]) {
         for (int i = 0 ; i < [fXNames count] ; i++) {
@@ -42,7 +42,7 @@
             [fXUnitArray addObject:fXWrapper];
         }
     } else {
-        NSLog(@"Original data for wavefiles corrupted.");
+        NSLog(@"Original data for effects corrupted.");
     }
     return fXUnitArray;
 }

@@ -147,14 +147,15 @@
     UITableViewCell * tableViewCell = [tableView cellForRowAtIndexPath:indexPath];
     NSString * name = tableViewCell.textLabel.text;
     for (AudioUnitWrapper *audioUnit in audioUnitArray) {
+        // Loads file or effect data from selected row.
         if (audioUnit.name == name) {
             viewController = (ViewController*)[[self.navigationController viewControllers] objectAtIndex:0];
             // This audioUnit is a track.
             if (audioUnit.type==0) {
-                view = [viewController loadTrackFiles:name];                
+                view = [viewController loadTrackFiles:name]; //XXX
             // This audioUnit is a effect.                
             } else if (audioUnit.type==1) {
-                [viewController loadFXFiles:name];
+                [viewController loadFXFiles:name];//XXX
             }
             break;
         }
@@ -205,7 +206,6 @@
         if (audioUnit.type==0) {
             // Get the array for the section.
             NSMutableArray *trackSection = [newSectionsArray objectAtIndex:0];
-            //  Add the time zone to the section.
             [trackSection addObject:audioUnit];
         } else if (audioUnit.type==1) {
             // Get the array for the section.

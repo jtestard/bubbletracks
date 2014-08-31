@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import <AVFoundation/AVFoundation.h>
-//#import "AudioEffect.h"
 #import "BubbleView.h"
 
 @interface BubbleTrackView : BubbleView {
 }
-//@property (strong,nonatomic) AudioTrack* audioTrack;
+@property (strong,nonatomic) NSString* audioTrackName;
 
 - (id)initWithName:(NSString*)aName Image:(UIImage*)image HighlightedImage:(UIImage*)highlightedImage Location:(CGPoint)location;
 @end

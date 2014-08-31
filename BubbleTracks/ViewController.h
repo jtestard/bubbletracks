@@ -11,6 +11,7 @@
 @class MenuViewController;
 @class BubbleTrackView;
 @class BubbleView;
+@class AudioMixer;
 
 @interface ViewController : UIViewController<UIGestureRecognizerDelegate> {
         NSMutableArray *bubblesArray;
@@ -19,6 +20,7 @@
 
 @property (nonatomic, retain) NSMutableArray *bubblesArray;
 @property (nonatomic, assign) CGPoint lastTouched;
+@property (nonatomic, strong) AudioMixer *audioMixer;
 
 /**
  Handles multiple simultaneous taps by the user in the pond.

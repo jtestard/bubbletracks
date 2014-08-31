@@ -12,6 +12,8 @@
 
 @synthesize firstView, secondView;
 
+
+//This class assumes firstView is a track view and second view is a FX view
 - (id) initWithColor:(UIColor*) color firstView:(BubbleView*) afirstView secondView:(BubbleView*) asecondView andFrame:(CGRect) rect {
     self = [super initWithFrame:rect];
     if (![afirstView isMemberOfClass:[BubbleTrackView class]]) {

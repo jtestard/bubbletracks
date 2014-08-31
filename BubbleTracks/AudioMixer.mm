@@ -7,6 +7,12 @@
 //
 
 #import "AudioMixer.h"
+#import "AudioEffect.h"
+#import "Reverb.h"
+#import "BandPassFilter.h"
+#import "LowPassFilter.h"
+#import "HighPassFilter.h"
+#import "Delay.h"
 
 #define SAMPLE_RATE 44100
 #define BPM 120
@@ -20,8 +26,6 @@ UInt32 quantizeRegion;
 UInt32 tolerance;
 
 @interface AudioMixer () {
-    float milestone;
-    NSTimeInterval startTime;
 }
 @end
 
@@ -32,8 +36,8 @@ UInt32 tolerance;
     
     self.controller = [[AEAudioController alloc] initWithAudioDescription:[AEAudioController nonInterleaved16BitStereoAudioDescription] inputEnabled:NO];
     self.filePlayers = [[NSMutableDictionary alloc] init];
+    self.effects = [[NSMutableDictionary alloc] init];
     self.bpm = BPM;
-    startTime = [AEBlockScheduler secondsFromHostTicks:[AEBlockScheduler now]];
     samplerate = SAMPLE_RATE;
     rateIndex=0;
     tempoRate = (UInt32)(((double)SECS_PER_MINUTE / (double)self.bpm) * samplerate);
@@ -64,39 +68,93 @@ UInt32 tolerance;
 }
 
 
--(void) addTrack:(NSString*) name andExtension:(NSString*) extension {
-    NSString* fullname = [NSString stringWithFormat:@"%@.%@", name, extension];
-    if (![self.filePlayers objectForKey:fullname]) {
+-(void) addTrack:(NSString*) nameWithExtension {
+    if (![self.filePlayers objectForKey:nameWithExtension]) {
+        NSArray* nameAndExtension = [nameWithExtension componentsSeparatedByString:@"."];
+        NSString* name = (NSString*)[nameAndExtension objectAtIndex:0];
+        NSString* extension = (NSString*)[nameAndExtension objectAtIndex:1];
         AEAudioFilePlayer* player = [AEAudioFilePlayer audioFilePlayerWithURL:[[NSBundle mainBundle] URLForResource:name withExtension:extension]
                                                               audioController: self.controller
                                                                         error:NULL];
         player.volume = 1.0;
-        player.channelIsMuted = NO;
+        player.channelIsMuted = YES;
         player.loop = YES;
         while(!(quantizeRegion-tolerance <= rateIndex && rateIndex <= quantizeRegion+tolerance)){
             //wait for the quantization
         }
         [self.controller addChannels:@[player]];
-        self.filePlayers[fullname] = player;
+        self.filePlayers[nameWithExtension] = player;
+    } else {
+        NSLog(@"Trying to add the file %@, but this file is already being played. This is not possible yet.",nameWithExtension);
     }
 }
 
--(void) removeTrack:(NSString*) name andExtension:(NSString*) extension {
-    NSString* fullname = [NSString stringWithFormat:@"%@.%@", name, extension];
-    AEAudioFilePlayer* player = (AEAudioFilePlayer*) self.filePlayers[fullname];
+-(void) removeTrack:(NSString*) nameWithExtension {
+    AEAudioFilePlayer* player = (AEAudioFilePlayer*) self.filePlayers[nameWithExtension];
     [self.controller removeChannels:@[player]];
-    [self.filePlayers removeObjectForKey:fullname];
+    [self.filePlayers removeObjectForKey:nameWithExtension];
     player = nil;
 }
 
--(void) unmuteTrack:(NSString*) name withExtension:(NSString*) extension {
-    ((AEAudioFilePlayer*) self.filePlayers[[NSString stringWithFormat:@"%@.%@", name, extension]]).channelIsMuted = NO;
+-(void) unmuteTrack:(NSString*) nameWithExtension {
+    ((AEAudioFilePlayer*) self.filePlayers[nameWithExtension]).channelIsMuted = NO;
 
 }
--(void) muteTrack:(NSString*) name withExtension:(NSString*) extension {
-    ((AEAudioFilePlayer*) self.filePlayers[[NSString stringWithFormat:@"%@.%@", name, extension]]).channelIsMuted = YES;
+-(void) muteTrack:(NSString*) nameWithExtension {
+    ((AEAudioFilePlayer*) self.filePlayers[nameWithExtension]).channelIsMuted = YES;
 }
 
+- (void) modifyEffect:(NSString*)effectName X:(Float32) x Y:(Float32) y {
+    AudioEffect* effect = (AudioEffect*)[self.effects objectForKey:effectName];
+    if (effect) {
+        [effect modifyEffectX:x Y:y];
+    } else {
+        NSLog(@"Trying to modify the effect %@, but it doesn't exist!",effectName);
+    }
+}
 
+-(void) addEffect:(NSString*) effectName {
+    if (![self.effects objectForKey:effectName]) {
+        if ([effectName isEqualToString:@"BandPassFilter"]) {
+            self.effects[effectName] = [[BandPassFilter alloc] initWithName:effectName];
+        } else if ([effectName isEqualToString:@"Delay"]) {
+            self.effects[effectName] = [[Delay alloc] initWithName:effectName];
+        } else if ([effectName isEqualToString:@"HighPassFilter"]) {
+            self.effects[effectName] = [[HighPassFilter alloc] initWithName:effectName];
+        } else if ([effectName isEqualToString:@"LowPassFilter"]) {
+            self.effects[effectName] = [[LowPassFilter alloc] initWithName:effectName];
+        } else if ([effectName isEqualToString:@"Reverb"]) {
+            self.effects[effectName] = [[Reverb alloc] initWithName:effectName];
+        } else {
+            NSLog(@"Trying to add the effect %@, but it is not recognized as a valid effect name.", effectName);
+        }
+    } else {
+        NSLog(@"Trying to add the effect %@, but this file is already being played. This is not possible yet.",effectName);
+    }
+}
+
+-(void) removeEffect:(NSString*) effectName {
+    AudioEffect* effect = (AudioEffect*) [self.effects objectForKey:effectName];
+    [self.effects removeObjectForKey:effectName];
+    effect = nil;
+}
+
+-(void) enableEffect:(NSString*) effectName {
+    [((AudioEffect*) [self.effects objectForKey:effectName]) enable];
+}
+
+-(void) disableEffect:(NSString*) effectName {
+    [((AudioEffect*) [self.effects objectForKey:effectName]) disable];
+}
+
+-(BOOL) linkTrack:(NSString*) track toEffect:(NSString*) effect {
+    NSLog(@"link track %@ to effect %@",track,effect);
+    return true;
+}
+
+-(BOOL) unlinkTrack:(NSString*) track toEffect:(NSString*) effect {
+    NSLog(@"unlink track %@ from effect %@",track,effect);
+    return true;
+}
 
 @end

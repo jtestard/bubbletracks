@@ -13,7 +13,7 @@
 @interface BubbleFXView : BubbleView {
 }
 
-//@property (strong,nonatomic) AudioEffect * audioEffect;
+@property (strong,nonatomic) NSString  *audioEffectName;
 - (id)initWithName:(NSString*)aName Image:(UIImage*)image HighlightedImage:(UIImage*)highlightedImage Location:(CGPoint)location;
 
 @end
