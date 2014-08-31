@@ -160,11 +160,7 @@
             break;
         }
     }
-    [self.navigationController popViewControllerAnimated:YES];    
-//    if (view!=nil) {
-//        // Add the audio track to the mixer.
-//        if (![self.mainViewController.audioMixer addTrack:view]) NSLog(@"Warning! track not loaded properly.");
-//    }
+    [self.navigationController popViewControllerAnimated:YES];
     selected = false;
 }
 

@@ -321,7 +321,7 @@
     [bubblesArray addObject:bubbleFXView];
     [self.view addSubview:bubbleFXView];
     //XXX Adds the effect to the AudioMixer
-    [audioMixer addTrack:bubbleFXView.audioEffectName];
+    [audioMixer addEffect:bubbleFXView.audioEffectName];
     color = (color+1)%4;
     return YES;
 }

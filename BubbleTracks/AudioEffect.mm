@@ -10,11 +10,13 @@
 
 @implementation AudioEffect
 
-- (id) initWithName:(NSString*) effectName {
+- (id) initWithName:(NSString*) effectName andController:(AEAudioController*) controller{
     self = [[AudioEffect alloc] init];
     xAxis=0.5;
     yAxis=0.5;
     self.effectName = effectName;
+    self.filter = nil;
+    self.controller = controller;
     return self;
 }
 
@@ -23,6 +25,7 @@
     xAxis+=((Float32)x)/80.0;
     yAxis+=((Float32)y)/80.0;
     [self avoidClipping];
+    NSLog(@"Effect Modified %@ (%f,%f)",self.effectName,x,y);
 }
 
 -(void) avoidClipping {

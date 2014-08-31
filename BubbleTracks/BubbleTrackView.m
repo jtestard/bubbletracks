@@ -26,7 +26,8 @@
     [self.title setText:aName];
     [self.title setTextColor:[UIColor blackColor]];
     [self.title setBackgroundColor:[UIColor clearColor]];
-    [self.title setFont:[UIFont fontWithName: @"Trebuchet MS" size: 12.0f]]; 
+    [self.title setFont:[UIFont fontWithName: @"Trebuchet MS" size: 12.0f]];
+    [self.title setTextAlignment: NSTextAlignmentCenter];
     [self addSubview:self.title];
     return self;
 }

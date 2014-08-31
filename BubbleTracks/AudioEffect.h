@@ -13,10 +13,11 @@
     Float32 yAxis;
 }
 
-@property (nonatomic, strong) NSString* effectName;
-@property (nonatomic, strong) NSObject <AEAudioFilter>   *filter;
+@property (nonatomic, strong) NSString                      *effectName;
+@property (nonatomic, strong) NSObject <AEAudioFilter>      *filter;
+@property (nonatomic, strong) AEAudioController             *controller;
 
-- (id) initWithName:(NSString*) effectName;
+- (id) initWithName:(NSString*) effectName andController:(AEAudioController*) controller;
 
 - (void) modifyEffectX:(Float32) x Y:(Float32) y;
 

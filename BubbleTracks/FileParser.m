@@ -33,7 +33,7 @@
 }
 
 - (NSMutableArray*) generatefXWrappers {
-    NSArray * fXNames = [NSArray arrayWithObjects:@"Delay",@"HighPassFilter",@"Reverb",@"LowPassFilter",@"bandPassFilter",nil];
+    NSArray * fXNames = [NSArray arrayWithObjects:@"Delay",@"HighPassFilter",@"Reverb",@"LowPassFilter",@"BandPassFilter",nil];
     NSArray * fXTypes = [NSArray arrayWithObjects:@"filter",@"filter",@"filter",@"filter",@"filter",nil];
     NSMutableArray * fXUnitArray = [[NSMutableArray alloc] initWithCapacity:[fXNames count]];
     if ([fXNames count] == [fXTypes count]) {

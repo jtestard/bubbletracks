@@ -68,11 +68,12 @@
 		E5D4B7AB19B27BE300D5052C /* AudioMixer.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7AA19B27BE300D5052C /* AudioMixer.mm */; };
 		E5D4B7AD19B2816700D5052C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E5D4B7AC19B2816700D5052C /* README.md */; };
 		E5D4B7B019B285DE00D5052C /* AudioEffect.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7AF19B285DE00D5052C /* AudioEffect.mm */; };
-		E5D4B7B419B2918400D5052C /* Reverb.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7B319B2918400D5052C /* Reverb.m */; };
-		E5D4B7B719B291DE00D5052C /* BandPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7B619B291DE00D5052C /* BandPassFilter.m */; };
-		E5D4B7BA19B2921A00D5052C /* LowPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7B919B2921A00D5052C /* LowPassFilter.m */; };
-		E5D4B7BD19B2923700D5052C /* HighPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7BC19B2923700D5052C /* HighPassFilter.m */; };
-		E5D4B7C019B2925800D5052C /* Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7BF19B2925800D5052C /* Delay.m */; };
+		E5D4B7B419B2918400D5052C /* Reverb.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7B319B2918400D5052C /* Reverb.mm */; };
+		E5D4B7B719B291DE00D5052C /* BandPassFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7B619B291DE00D5052C /* BandPassFilter.mm */; };
+		E5D4B7BA19B2921A00D5052C /* LowPassFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7B919B2921A00D5052C /* LowPassFilter.mm */; };
+		E5D4B7BD19B2923700D5052C /* HighPassFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7BC19B2923700D5052C /* HighPassFilter.mm */; };
+		E5D4B7C019B2925800D5052C /* Delay.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7BF19B2925800D5052C /* Delay.mm */; };
+		E5D4B7C619B2C74400D5052C /* AudioTrack.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7C519B2C74400D5052C /* AudioTrack.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,15 +168,17 @@
 		E5D4B7AE19B285DE00D5052C /* AudioEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioEffect.h; sourceTree = "<group>"; };
 		E5D4B7AF19B285DE00D5052C /* AudioEffect.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioEffect.mm; sourceTree = "<group>"; };
 		E5D4B7B219B2918400D5052C /* Reverb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reverb.h; sourceTree = "<group>"; };
-		E5D4B7B319B2918400D5052C /* Reverb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reverb.m; sourceTree = "<group>"; };
+		E5D4B7B319B2918400D5052C /* Reverb.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Reverb.mm; sourceTree = "<group>"; };
 		E5D4B7B519B291DE00D5052C /* BandPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BandPassFilter.h; sourceTree = "<group>"; };
-		E5D4B7B619B291DE00D5052C /* BandPassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BandPassFilter.m; sourceTree = "<group>"; };
+		E5D4B7B619B291DE00D5052C /* BandPassFilter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BandPassFilter.mm; sourceTree = "<group>"; };
 		E5D4B7B819B2921A00D5052C /* LowPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowPassFilter.h; sourceTree = "<group>"; };
-		E5D4B7B919B2921A00D5052C /* LowPassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowPassFilter.m; sourceTree = "<group>"; };
+		E5D4B7B919B2921A00D5052C /* LowPassFilter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LowPassFilter.mm; sourceTree = "<group>"; };
 		E5D4B7BB19B2923700D5052C /* HighPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighPassFilter.h; sourceTree = "<group>"; };
-		E5D4B7BC19B2923700D5052C /* HighPassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighPassFilter.m; sourceTree = "<group>"; };
+		E5D4B7BC19B2923700D5052C /* HighPassFilter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HighPassFilter.mm; sourceTree = "<group>"; };
 		E5D4B7BE19B2925800D5052C /* Delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Delay.h; sourceTree = "<group>"; };
-		E5D4B7BF19B2925800D5052C /* Delay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Delay.m; sourceTree = "<group>"; };
+		E5D4B7BF19B2925800D5052C /* Delay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Delay.mm; sourceTree = "<group>"; };
+		E5D4B7C419B2C74400D5052C /* AudioTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioTrack.h; sourceTree = "<group>"; };
+		E5D4B7C519B2C74400D5052C /* AudioTrack.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioTrack.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +388,8 @@
 		E574301019B1936D00CE54AF /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				E5D4B7C419B2C74400D5052C /* AudioTrack.h */,
+				E5D4B7C519B2C74400D5052C /* AudioTrack.mm */,
 				E5D4B7A919B27BE300D5052C /* AudioMixer.h */,
 				E5D4B7AA19B27BE300D5052C /* AudioMixer.mm */,
 				E5D4B7B119B2916F00D5052C /* Effects */,
@@ -398,15 +403,15 @@
 				E5D4B7AE19B285DE00D5052C /* AudioEffect.h */,
 				E5D4B7AF19B285DE00D5052C /* AudioEffect.mm */,
 				E5D4B7B219B2918400D5052C /* Reverb.h */,
-				E5D4B7B319B2918400D5052C /* Reverb.m */,
+				E5D4B7B319B2918400D5052C /* Reverb.mm */,
 				E5D4B7B519B291DE00D5052C /* BandPassFilter.h */,
-				E5D4B7B619B291DE00D5052C /* BandPassFilter.m */,
+				E5D4B7B619B291DE00D5052C /* BandPassFilter.mm */,
 				E5D4B7B819B2921A00D5052C /* LowPassFilter.h */,
-				E5D4B7B919B2921A00D5052C /* LowPassFilter.m */,
+				E5D4B7B919B2921A00D5052C /* LowPassFilter.mm */,
 				E5D4B7BB19B2923700D5052C /* HighPassFilter.h */,
-				E5D4B7BC19B2923700D5052C /* HighPassFilter.m */,
+				E5D4B7BC19B2923700D5052C /* HighPassFilter.mm */,
 				E5D4B7BE19B2925800D5052C /* Delay.h */,
-				E5D4B7BF19B2925800D5052C /* Delay.m */,
+				E5D4B7BF19B2925800D5052C /* Delay.mm */,
 			);
 			name = Effects;
 			sourceTree = "<group>";
@@ -579,18 +584,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5D4B7B719B291DE00D5052C /* BandPassFilter.m in Sources */,
-				E5D4B7C019B2925800D5052C /* Delay.m in Sources */,
+				E5D4B7B719B291DE00D5052C /* BandPassFilter.mm in Sources */,
+				E5D4B7C019B2925800D5052C /* Delay.mm in Sources */,
 				E528510419B16A93000EEEB0 /* FXWrapper.m in Sources */,
 				E528515B19B175CE000EEEB0 /* CustomNavigationViewController.mm in Sources */,
 				E52850D419B162C2000EEEB0 /* ViewController.mm in Sources */,
 				E528510919B16A93000EEEB0 /* LinkView.m in Sources */,
-				E5D4B7BD19B2923700D5052C /* HighPassFilter.m in Sources */,
-				E5D4B7B419B2918400D5052C /* Reverb.m in Sources */,
+				E5D4B7BD19B2923700D5052C /* HighPassFilter.mm in Sources */,
+				E5D4B7C619B2C74400D5052C /* AudioTrack.mm in Sources */,
+				E5D4B7B419B2918400D5052C /* Reverb.mm in Sources */,
 				E528511619B16C6B000EEEB0 /* Line.m in Sources */,
 				E528510619B16A93000EEEB0 /* BubbleFXView.m in Sources */,
 				E528511719B16C6B000EEEB0 /* ScaleFunctions.m in Sources */,
-				E5D4B7BA19B2921A00D5052C /* LowPassFilter.m in Sources */,
+				E5D4B7BA19B2921A00D5052C /* LowPassFilter.mm in Sources */,
 				E52850CB19B162C1000EEEB0 /* AppDelegate.mm in Sources */,
 				E528510519B16A93000EEEB0 /* TrackWrapper.m in Sources */,
 				E5D4B7AB19B27BE300D5052C /* AudioMixer.mm in Sources */,
