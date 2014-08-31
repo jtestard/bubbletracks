@@ -23,6 +23,7 @@
     player.volume = 1.0;
     player.channelIsMuted = YES;
     player.loop = YES;
+    self.player = player;
     return self;
 }
 

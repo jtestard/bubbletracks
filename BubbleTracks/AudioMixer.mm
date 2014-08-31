@@ -92,11 +92,11 @@ UInt32 tolerance;
 }
 
 -(void) unmuteTrack:(NSString*) nameWithExtension {
-    ((AEAudioFilePlayer*) self.filePlayers[nameWithExtension]).channelIsMuted = NO;
+    ((AudioTrack*) self.filePlayers[nameWithExtension]).player.channelIsMuted = NO;
 
 }
 -(void) muteTrack:(NSString*) nameWithExtension {
-    ((AEAudioFilePlayer*) self.filePlayers[nameWithExtension]).channelIsMuted = YES;
+    ((AudioTrack*) self.filePlayers[nameWithExtension]).player.channelIsMuted = YES;
 }
 
 - (void) modifyEffect:(NSString*)effectName X:(Float32) x Y:(Float32) y {

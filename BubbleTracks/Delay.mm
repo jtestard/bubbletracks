@@ -22,7 +22,7 @@
                           kDelayParam_DelayTime,
                           kAudioUnitScope_Global,
                           0,
-                          4.0,
+                          400.0,
                           0);
     return self;
 }
