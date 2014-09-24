@@ -103,10 +103,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-	// Get the time zone from the array associated with the section index in the sections array.
 	NSArray *itemsInSection = [sectionsArray objectAtIndex:indexPath.section];
 	
-	// Configure the cell with the time zone's name.
 	AudioUnitWrapper *audioUnitWrapper = [itemsInSection objectAtIndex:indexPath.row];
     
     cell.textLabel.text = audioUnitWrapper.name;
@@ -141,7 +139,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ViewController* viewController;
-    BubbleTrackView* view = nil;
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
     //We want to create the corresponding track at the location given by the
     UITableViewCell * tableViewCell = [tableView cellForRowAtIndexPath:indexPath];

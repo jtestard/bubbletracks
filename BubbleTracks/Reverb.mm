@@ -24,11 +24,13 @@
                           0,
                           100.0,
                           0);
+    ((AEAudioUnitFilter*)self.filter).bypassed = YES;
     return self;
 }
 
 - (void) modifyEffectX:(Float32) x Y:(Float32) y {
     [super modifyEffectX:x Y:y];
+    //Not implemented yet.
 }
 
 -(void) enable {

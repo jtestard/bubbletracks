@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		13F68FBAA7904C47BB1C92F2 /* libPods-BubbleTracks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4C3C434D7143D696FB42FB /* libPods-BubbleTracks.a */; };
+		E51A931119B5442C00FF71CF /* bass001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A930419B5442C00FF71CF /* bass001.wav */; };
+		E51A931219B5442C00FF71CF /* bass002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A930519B5442C00FF71CF /* bass002.wav */; };
+		E51A931319B5442C00FF71CF /* bass003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A930619B5442C00FF71CF /* bass003.wav */; };
+		E51A931419B5442C00FF71CF /* bass004.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A930719B5442C00FF71CF /* bass004.wav */; };
+		E51A931519B5442C00FF71CF /* drums001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A930819B5442C00FF71CF /* drums001.wav */; };
+		E51A931619B5442C00FF71CF /* drums002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A930919B5442C00FF71CF /* drums002.wav */; };
+		E51A931719B5442C00FF71CF /* drums003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A930A19B5442C00FF71CF /* drums003.wav */; };
+		E51A931819B5442C00FF71CF /* drums004.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A930B19B5442C00FF71CF /* drums004.wav */; };
+		E51A931919B5442C00FF71CF /* drums005.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A930C19B5442C00FF71CF /* drums005.wav */; };
+		E51A931A19B5442C00FF71CF /* lead001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A930D19B5442C00FF71CF /* lead001.wav */; };
+		E51A931B19B5442C00FF71CF /* lead002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A930E19B5442C00FF71CF /* lead002.wav */; };
+		E51A931C19B5442C00FF71CF /* lead003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A930F19B5442C00FF71CF /* lead003.wav */; };
+		E51A931D19B5442C00FF71CF /* lead004.wav in Resources */ = {isa = PBXBuildFile; fileRef = E51A931019B5442C00FF71CF /* lead004.wav */; };
 		E52850BB19B162C1000EEEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52850BA19B162C1000EEEB0 /* Foundation.framework */; };
 		E52850BD19B162C1000EEEB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52850BC19B162C1000EEEB0 /* CoreGraphics.framework */; };
 		E52850BF19B162C1000EEEB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52850BE19B162C1000EEEB0 /* UIKit.framework */; };
@@ -87,6 +100,33 @@
 		E5BF633A19B2E2D00090D511 /* BluesHarmonica10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF632419B2E2D00090D511 /* BluesHarmonica10.mp3 */; };
 		E5BF633B19B2E2D00090D511 /* ClassickRockBeat01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF632519B2E2D00090D511 /* ClassickRockBeat01.mp3 */; };
 		E5BF633C19B2E2D00090D511 /* ClassickRockBeat02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF632619B2E2D00090D511 /* ClassickRockBeat02.mp3 */; };
+		E5BF635819B3B3F60090D511 /* claypotPercussion01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF633D19B3B3F60090D511 /* claypotPercussion01.mp3 */; };
+		E5BF635919B3B3F60090D511 /* CopShowClav01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF633E19B3B3F60090D511 /* CopShowClav01.mp3 */; };
+		E5BF635A19B3B3F60090D511 /* CopShowClav06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF633F19B3B3F60090D511 /* CopShowClav06.mp3 */; };
+		E5BF635B19B3B3F60090D511 /* ElectricSlap02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634019B3B3F60090D511 /* ElectricSlap02.mp3 */; };
+		E5BF635C19B3B3F60090D511 /* ElectricSlap03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634119B3B3F60090D511 /* ElectricSlap03.mp3 */; };
+		E5BF635D19B3B3F60090D511 /* ElectricSlap04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634219B3B3F60090D511 /* ElectricSlap04.mp3 */; };
+		E5BF635E19B3B3F60090D511 /* ElectricSlap05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634319B3B3F60090D511 /* ElectricSlap05.mp3 */; };
+		E5BF635F19B3B3F60090D511 /* ElectricSlap09.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634419B3B3F60090D511 /* ElectricSlap09.mp3 */; };
+		E5BF636019B3B3F60090D511 /* FunkyElectricGuitar05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634519B3B3F60090D511 /* FunkyElectricGuitar05.mp3 */; };
+		E5BF636119B3B3F60090D511 /* FunkyElectricGuitar06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634619B3B3F60090D511 /* FunkyElectricGuitar06.mp3 */; };
+		E5BF636219B3B3F60090D511 /* FunkyElectricGuitar07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634719B3B3F60090D511 /* FunkyElectricGuitar07.mp3 */; };
+		E5BF636319B3B3F60090D511 /* FunkyMutedBass02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634819B3B3F60090D511 /* FunkyMutedBass02.mp3 */; };
+		E5BF636419B3B3F60090D511 /* FunkyPopConga01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634919B3B3F60090D511 /* FunkyPopConga01.mp3 */; };
+		E5BF636519B3B3F60090D511 /* GroovyElectricBass05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634A19B3B3F60090D511 /* GroovyElectricBass05.mp3 */; };
+		E5BF636619B3B3F60090D511 /* GroovyElectricBass06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634B19B3B3F60090D511 /* GroovyElectricBass06.mp3 */; };
+		E5BF636719B3B3F60090D511 /* GroovyElectricBass09.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634C19B3B3F60090D511 /* GroovyElectricBass09.mp3 */; };
+		E5BF636819B3B3F60090D511 /* HipHopBeat01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634D19B3B3F60090D511 /* HipHopBeat01.mp3 */; };
+		E5BF636919B3B3F60090D511 /* HipHopBeat02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634E19B3B3F60090D511 /* HipHopBeat02.mp3 */; };
+		E5BF636A19B3B3F60090D511 /* HipHopBeat03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF634F19B3B3F60090D511 /* HipHopBeat03.mp3 */; };
+		E5BF636B19B3B3F60090D511 /* HipHopBeat04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF635019B3B3F60090D511 /* HipHopBeat04.mp3 */; };
+		E5BF636C19B3B3F60090D511 /* HipHopBeat05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF635119B3B3F60090D511 /* HipHopBeat05.mp3 */; };
+		E5BF636D19B3B3F60090D511 /* IslandReggaeDrums02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF635219B3B3F60090D511 /* IslandReggaeDrums02.mp3 */; };
+		E5BF636E19B3B3F60090D511 /* IslandReggageDrums01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF635319B3B3F60090D511 /* IslandReggageDrums01.mp3 */; };
+		E5BF636F19B3B3F60090D511 /* LiveEdgyDrums01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF635419B3B3F60090D511 /* LiveEdgyDrums01.mp3 */; };
+		E5BF637019B3B3F60090D511 /* MotownDrummer06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF635519B3B3F60090D511 /* MotownDrummer06.mp3 */; };
+		E5BF637119B3B3F60090D511 /* MotownDrummer08.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF635619B3B3F60090D511 /* MotownDrummer08.mp3 */; };
+		E5BF637219B3B3F60090D511 /* OldSchoolFunk04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5BF635719B3B3F60090D511 /* OldSchoolFunk04.mp3 */; };
 		E5D4B7AB19B27BE300D5052C /* AudioMixer.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7AA19B27BE300D5052C /* AudioMixer.mm */; };
 		E5D4B7AD19B2816700D5052C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E5D4B7AC19B2816700D5052C /* README.md */; };
 		E5D4B7B019B285DE00D5052C /* AudioEffect.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5D4B7AF19B285DE00D5052C /* AudioEffect.mm */; };
@@ -111,6 +151,19 @@
 /* Begin PBXFileReference section */
 		0C4C3C434D7143D696FB42FB /* libPods-BubbleTracks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BubbleTracks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB8ABF3BF414C9A94C460EB /* Pods-BubbleTracks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleTracks.xcconfig"; path = "Pods/Pods-BubbleTracks.xcconfig"; sourceTree = "<group>"; };
+		E51A930419B5442C00FF71CF /* bass001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass001.wav; sourceTree = "<group>"; };
+		E51A930519B5442C00FF71CF /* bass002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass002.wav; sourceTree = "<group>"; };
+		E51A930619B5442C00FF71CF /* bass003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass003.wav; sourceTree = "<group>"; };
+		E51A930719B5442C00FF71CF /* bass004.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass004.wav; sourceTree = "<group>"; };
+		E51A930819B5442C00FF71CF /* drums001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums001.wav; sourceTree = "<group>"; };
+		E51A930919B5442C00FF71CF /* drums002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums002.wav; sourceTree = "<group>"; };
+		E51A930A19B5442C00FF71CF /* drums003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums003.wav; sourceTree = "<group>"; };
+		E51A930B19B5442C00FF71CF /* drums004.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums004.wav; sourceTree = "<group>"; };
+		E51A930C19B5442C00FF71CF /* drums005.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums005.wav; sourceTree = "<group>"; };
+		E51A930D19B5442C00FF71CF /* lead001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lead001.wav; sourceTree = "<group>"; };
+		E51A930E19B5442C00FF71CF /* lead002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lead002.wav; sourceTree = "<group>"; };
+		E51A930F19B5442C00FF71CF /* lead003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lead003.wav; sourceTree = "<group>"; };
+		E51A931019B5442C00FF71CF /* lead004.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lead004.wav; sourceTree = "<group>"; };
 		E52850B719B162C1000EEEB0 /* BubbleTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52850BA19B162C1000EEEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E52850BC19B162C1000EEEB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -206,6 +259,33 @@
 		E5BF632419B2E2D00090D511 /* BluesHarmonica10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluesHarmonica10.mp3; sourceTree = "<group>"; };
 		E5BF632519B2E2D00090D511 /* ClassickRockBeat01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ClassickRockBeat01.mp3; sourceTree = "<group>"; };
 		E5BF632619B2E2D00090D511 /* ClassickRockBeat02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ClassickRockBeat02.mp3; sourceTree = "<group>"; };
+		E5BF633D19B3B3F60090D511 /* claypotPercussion01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = claypotPercussion01.mp3; sourceTree = "<group>"; };
+		E5BF633E19B3B3F60090D511 /* CopShowClav01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CopShowClav01.mp3; sourceTree = "<group>"; };
+		E5BF633F19B3B3F60090D511 /* CopShowClav06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CopShowClav06.mp3; sourceTree = "<group>"; };
+		E5BF634019B3B3F60090D511 /* ElectricSlap02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ElectricSlap02.mp3; sourceTree = "<group>"; };
+		E5BF634119B3B3F60090D511 /* ElectricSlap03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ElectricSlap03.mp3; sourceTree = "<group>"; };
+		E5BF634219B3B3F60090D511 /* ElectricSlap04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ElectricSlap04.mp3; sourceTree = "<group>"; };
+		E5BF634319B3B3F60090D511 /* ElectricSlap05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ElectricSlap05.mp3; sourceTree = "<group>"; };
+		E5BF634419B3B3F60090D511 /* ElectricSlap09.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ElectricSlap09.mp3; sourceTree = "<group>"; };
+		E5BF634519B3B3F60090D511 /* FunkyElectricGuitar05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FunkyElectricGuitar05.mp3; sourceTree = "<group>"; };
+		E5BF634619B3B3F60090D511 /* FunkyElectricGuitar06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FunkyElectricGuitar06.mp3; sourceTree = "<group>"; };
+		E5BF634719B3B3F60090D511 /* FunkyElectricGuitar07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FunkyElectricGuitar07.mp3; sourceTree = "<group>"; };
+		E5BF634819B3B3F60090D511 /* FunkyMutedBass02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FunkyMutedBass02.mp3; sourceTree = "<group>"; };
+		E5BF634919B3B3F60090D511 /* FunkyPopConga01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FunkyPopConga01.mp3; sourceTree = "<group>"; };
+		E5BF634A19B3B3F60090D511 /* GroovyElectricBass05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GroovyElectricBass05.mp3; sourceTree = "<group>"; };
+		E5BF634B19B3B3F60090D511 /* GroovyElectricBass06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GroovyElectricBass06.mp3; sourceTree = "<group>"; };
+		E5BF634C19B3B3F60090D511 /* GroovyElectricBass09.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GroovyElectricBass09.mp3; sourceTree = "<group>"; };
+		E5BF634D19B3B3F60090D511 /* HipHopBeat01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HipHopBeat01.mp3; sourceTree = "<group>"; };
+		E5BF634E19B3B3F60090D511 /* HipHopBeat02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HipHopBeat02.mp3; sourceTree = "<group>"; };
+		E5BF634F19B3B3F60090D511 /* HipHopBeat03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HipHopBeat03.mp3; sourceTree = "<group>"; };
+		E5BF635019B3B3F60090D511 /* HipHopBeat04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HipHopBeat04.mp3; sourceTree = "<group>"; };
+		E5BF635119B3B3F60090D511 /* HipHopBeat05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HipHopBeat05.mp3; sourceTree = "<group>"; };
+		E5BF635219B3B3F60090D511 /* IslandReggaeDrums02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = IslandReggaeDrums02.mp3; sourceTree = "<group>"; };
+		E5BF635319B3B3F60090D511 /* IslandReggageDrums01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = IslandReggageDrums01.mp3; sourceTree = "<group>"; };
+		E5BF635419B3B3F60090D511 /* LiveEdgyDrums01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LiveEdgyDrums01.mp3; sourceTree = "<group>"; };
+		E5BF635519B3B3F60090D511 /* MotownDrummer06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MotownDrummer06.mp3; sourceTree = "<group>"; };
+		E5BF635619B3B3F60090D511 /* MotownDrummer08.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MotownDrummer08.mp3; sourceTree = "<group>"; };
+		E5BF635719B3B3F60090D511 /* OldSchoolFunk04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OldSchoolFunk04.mp3; sourceTree = "<group>"; };
 		E5D4B7A919B27BE300D5052C /* AudioMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioMixer.h; sourceTree = "<group>"; };
 		E5D4B7AA19B27BE300D5052C /* AudioMixer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioMixer.mm; sourceTree = "<group>"; };
 		E5D4B7AC19B2816700D5052C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -384,6 +464,46 @@
 		E528515719B16D9B000EEEB0 /* audioloops */ = {
 			isa = PBXGroup;
 			children = (
+				E51A930419B5442C00FF71CF /* bass001.wav */,
+				E51A930519B5442C00FF71CF /* bass002.wav */,
+				E51A930619B5442C00FF71CF /* bass003.wav */,
+				E51A930719B5442C00FF71CF /* bass004.wav */,
+				E51A930819B5442C00FF71CF /* drums001.wav */,
+				E51A930919B5442C00FF71CF /* drums002.wav */,
+				E51A930A19B5442C00FF71CF /* drums003.wav */,
+				E51A930B19B5442C00FF71CF /* drums004.wav */,
+				E51A930C19B5442C00FF71CF /* drums005.wav */,
+				E51A930D19B5442C00FF71CF /* lead001.wav */,
+				E51A930E19B5442C00FF71CF /* lead002.wav */,
+				E51A930F19B5442C00FF71CF /* lead003.wav */,
+				E51A931019B5442C00FF71CF /* lead004.wav */,
+				E5BF633D19B3B3F60090D511 /* claypotPercussion01.mp3 */,
+				E5BF633E19B3B3F60090D511 /* CopShowClav01.mp3 */,
+				E5BF633F19B3B3F60090D511 /* CopShowClav06.mp3 */,
+				E5BF634019B3B3F60090D511 /* ElectricSlap02.mp3 */,
+				E5BF634119B3B3F60090D511 /* ElectricSlap03.mp3 */,
+				E5BF634219B3B3F60090D511 /* ElectricSlap04.mp3 */,
+				E5BF634319B3B3F60090D511 /* ElectricSlap05.mp3 */,
+				E5BF634419B3B3F60090D511 /* ElectricSlap09.mp3 */,
+				E5BF634519B3B3F60090D511 /* FunkyElectricGuitar05.mp3 */,
+				E5BF634619B3B3F60090D511 /* FunkyElectricGuitar06.mp3 */,
+				E5BF634719B3B3F60090D511 /* FunkyElectricGuitar07.mp3 */,
+				E5BF634819B3B3F60090D511 /* FunkyMutedBass02.mp3 */,
+				E5BF634919B3B3F60090D511 /* FunkyPopConga01.mp3 */,
+				E5BF634A19B3B3F60090D511 /* GroovyElectricBass05.mp3 */,
+				E5BF634B19B3B3F60090D511 /* GroovyElectricBass06.mp3 */,
+				E5BF634C19B3B3F60090D511 /* GroovyElectricBass09.mp3 */,
+				E5BF634D19B3B3F60090D511 /* HipHopBeat01.mp3 */,
+				E5BF634E19B3B3F60090D511 /* HipHopBeat02.mp3 */,
+				E5BF634F19B3B3F60090D511 /* HipHopBeat03.mp3 */,
+				E5BF635019B3B3F60090D511 /* HipHopBeat04.mp3 */,
+				E5BF635119B3B3F60090D511 /* HipHopBeat05.mp3 */,
+				E5BF635219B3B3F60090D511 /* IslandReggaeDrums02.mp3 */,
+				E5BF635319B3B3F60090D511 /* IslandReggageDrums01.mp3 */,
+				E5BF635419B3B3F60090D511 /* LiveEdgyDrums01.mp3 */,
+				E5BF635519B3B3F60090D511 /* MotownDrummer06.mp3 */,
+				E5BF635619B3B3F60090D511 /* MotownDrummer08.mp3 */,
+				E5BF635719B3B3F60090D511 /* OldSchoolFunk04.mp3 */,
 				E5BF631119B2E2D00090D511 /* 70BalladDrums01.mp3 */,
 				E5BF631219B2E2D00090D511 /* 70BalladPiano1.mp3 */,
 				E5BF631319B2E2D00090D511 /* 70BalladPiano2.mp3 */,
@@ -564,24 +684,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5BF633619B2E2D00090D511 /* AlternativeRockBass04.mp3 in Resources */,
+				E5BF636B19B3B3F60090D511 /* HipHopBeat04.mp3 in Resources */,
+				E5BF636719B3B3F60090D511 /* GroovyElectricBass09.mp3 in Resources */,
 				E5BF632B19B2E2D00090D511 /* 70BalladPiano4.mp3 in Resources */,
 				E5BF632919B2E2D00090D511 /* 70BalladPiano2.mp3 in Resources */,
 				E5BF633219B2E2D00090D511 /* AcousticPicking09.mp3 in Resources */,
+				E5BF636619B3B3F60090D511 /* GroovyElectricBass06.mp3 in Resources */,
+				E5BF636C19B3B3F60090D511 /* HipHopBeat05.mp3 in Resources */,
 				E5BF633A19B2E2D00090D511 /* BluesHarmonica10.mp3 in Resources */,
+				E51A931319B5442C00FF71CF /* bass003.wav in Resources */,
 				E5BF633719B2E2D00090D511 /* AmbientGuitar01.mp3 in Resources */,
+				E5BF636F19B3B3F60090D511 /* LiveEdgyDrums01.mp3 in Resources */,
 				E58CE73A19B2D9290022438B /* drums004.wav in Resources */,
+				E5BF636919B3B3F60090D511 /* HipHopBeat02.mp3 in Resources */,
+				E5BF636319B3B3F60090D511 /* FunkyMutedBass02.mp3 in Resources */,
 				E58CE75F19B2D9400022438B /* paused_orange.png in Resources */,
 				E58CE75719B2D9400022438B /* fx_orange.png in Resources */,
 				E58CE75519B2D9400022438B /* fx_blue.png in Resources */,
 				E52850D619B162C2000EEEB0 /* Images.xcassets in Resources */,
 				E58CE73319B2D9290022438B /* bass001.wav in Resources */,
 				E58CE75C19B2D9400022438B /* fxlit_purple.png in Resources */,
+				E51A931D19B5442C00FF71CF /* lead004.wav in Resources */,
 				E58CE75819B2D9400022438B /* fx_purple.png in Resources */,
 				E5BF633019B2E2D00090D511 /* 80PopBeat10.mp3 in Resources */,
+				E5BF635D19B3B3F60090D511 /* ElectricSlap04.mp3 in Resources */,
+				E51A931519B5442C00FF71CF /* drums001.wav in Resources */,
 				E58CE76119B2D9400022438B /* playing_blue.png in Resources */,
 				E5D4B7AD19B2816700D5052C /* README.md in Resources */,
+				E5BF635919B3B3F60090D511 /* CopShowClav01.mp3 in Resources */,
+				E51A931C19B5442C00FF71CF /* lead003.wav in Resources */,
 				E5BF633919B2E2D00090D511 /* BluesHarmonica09.mp3 in Resources */,
+				E5BF636019B3B3F60090D511 /* FunkyElectricGuitar05.mp3 in Resources */,
+				E5BF636419B3B3F60090D511 /* FunkyPopConga01.mp3 in Resources */,
 				E5BF633419B2E2D00090D511 /* AcousticPicking20.mp3 in Resources */,
+				E5BF635A19B3B3F60090D511 /* CopShowClav06.mp3 in Resources */,
 				E58CE73B19B2D9290022438B /* drums005.wav in Resources */,
 				E58CE75D19B2D9400022438B /* paused_blue.png in Resources */,
 				E58CE73C19B2D9290022438B /* exoticBeat05.mp3 in Resources */,
@@ -590,38 +726,62 @@
 				E5BF632A19B2E2D00090D511 /* 70BalladPiano3.mp3 in Resources */,
 				E5BF633819B2E2D00090D511 /* BluesGuitar02.mp3 in Resources */,
 				E58CE74119B2D9290022438B /* lead003.wav in Resources */,
+				E51A931619B5442C00FF71CF /* drums002.wav in Resources */,
+				E5BF636D19B3B3F60090D511 /* IslandReggaeDrums02.mp3 in Resources */,
 				E58CE74419B2D9290022438B /* woodyLatinBass01.mp3 in Resources */,
+				E51A931419B5442C00FF71CF /* bass004.wav in Resources */,
+				E5BF636219B3B3F60090D511 /* FunkyElectricGuitar07.mp3 in Resources */,
 				E58CE76019B2D9400022438B /* paused_purple.png in Resources */,
+				E51A931819B5442C00FF71CF /* drums004.wav in Resources */,
 				E58CE73E19B2D9290022438B /* LatinBassCombination.mp3 in Resources */,
 				E58CE73519B2D9290022438B /* bass003.wav in Resources */,
 				E58CE76219B2D9400022438B /* playing_green.png in Resources */,
 				E58CE73819B2D9290022438B /* drums002.wav in Resources */,
+				E5BF635E19B3B3F60090D511 /* ElectricSlap05.mp3 in Resources */,
 				E5BF633119B2E2D00090D511 /* AcousticPicking07.mp3 in Resources */,
+				E5BF637119B3B3F60090D511 /* MotownDrummer08.mp3 in Resources */,
 				E5BF633C19B2E2D00090D511 /* ClassickRockBeat02.mp3 in Resources */,
+				E5BF636519B3B3F60090D511 /* GroovyElectricBass05.mp3 in Resources */,
+				E5BF635F19B3B3F60090D511 /* ElectricSlap09.mp3 in Resources */,
 				E58CE75919B2D9400022438B /* fxlit_blue.png in Resources */,
 				E58CE76419B2D9400022438B /* playing_purple.png in Resources */,
 				E5BF632819B2E2D00090D511 /* 70BalladPiano1.mp3 in Resources */,
 				E58CE75E19B2D9400022438B /* paused_green.png in Resources */,
+				E51A931119B5442C00FF71CF /* bass001.wav in Resources */,
+				E51A931219B5442C00FF71CF /* bass002.wav in Resources */,
+				E5BF636E19B3B3F60090D511 /* IslandReggageDrums01.mp3 in Resources */,
 				E5BF633319B2E2D00090D511 /* AcousticPicking12.mp3 in Resources */,
 				E58CE73D19B2D9290022438B /* funkyElectricGuitar03.mp3 in Resources */,
 				E58CE76319B2D9400022438B /* playing_orange.png in Resources */,
 				E58CE73719B2D9290022438B /* drums001.wav in Resources */,
+				E5BF636819B3B3F60090D511 /* HipHopBeat01.mp3 in Resources */,
 				E52850C519B162C1000EEEB0 /* InfoPlist.strings in Resources */,
+				E5BF635C19B3B3F60090D511 /* ElectricSlap03.mp3 in Resources */,
 				E5BF632F19B2E2D00090D511 /* 80PopBeat09.mp3 in Resources */,
 				E58CE73419B2D9290022438B /* bass002.wav in Resources */,
 				E5BF633B19B2E2D00090D511 /* ClassickRockBeat01.mp3 in Resources */,
+				E5BF637019B3B3F60090D511 /* MotownDrummer06.mp3 in Resources */,
 				E58CE74019B2D9290022438B /* lead002.wav in Resources */,
 				E58CE73919B2D9290022438B /* drums003.wav in Resources */,
+				E51A931A19B5442C00FF71CF /* lead001.wav in Resources */,
 				E58CE74219B2D9290022438B /* lead004.wav in Resources */,
 				E5BF632C19B2E2D00090D511 /* 70BalladPiano5.mp3 in Resources */,
 				E58CE75A19B2D9400022438B /* fxlit_green.png in Resources */,
 				E5BF633519B2E2D00090D511 /* AlternativeRockBass03.mp3 in Resources */,
 				E5BF632D19B2E2D00090D511 /* 80PopBeat07.mp3 in Resources */,
 				E58CE74319B2D9290022438B /* roundLatinBass06.mp3 in Resources */,
+				E51A931B19B5442C00FF71CF /* lead002.wav in Resources */,
 				E5BF632E19B2E2D00090D511 /* 80PopBeat08.mp3 in Resources */,
 				E58CE75B19B2D9400022438B /* fxlit_orange.png in Resources */,
+				E5BF635819B3B3F60090D511 /* claypotPercussion01.mp3 in Resources */,
+				E5BF636119B3B3F60090D511 /* FunkyElectricGuitar06.mp3 in Resources */,
+				E5BF635B19B3B3F60090D511 /* ElectricSlap02.mp3 in Resources */,
 				E58CE73F19B2D9290022438B /* lead001.wav in Resources */,
 				E58CE73619B2D9290022438B /* bass004.wav in Resources */,
+				E5BF637219B3B3F60090D511 /* OldSchoolFunk04.mp3 in Resources */,
+				E51A931719B5442C00FF71CF /* drums003.wav in Resources */,
+				E51A931919B5442C00FF71CF /* drums005.wav in Resources */,
+				E5BF636A19B3B3F60090D511 /* HipHopBeat03.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,6 +969,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BubbleTracks/BubbleTracks-Prefix.pch";
 				INFOPLIST_FILE = "BubbleTracks/BubbleTracks-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -824,6 +985,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BubbleTracks/BubbleTracks-Prefix.pch";
 				INFOPLIST_FILE = "BubbleTracks/BubbleTracks-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

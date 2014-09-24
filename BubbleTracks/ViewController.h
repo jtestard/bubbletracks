@@ -32,6 +32,16 @@
 - (IBAction)handle2FingerTap:(UITapGestureRecognizer *)recognizer;
 
 /**
+ Comments coming soon. TODO
+ */
+-(IBAction)handle3FingerTap:(UITapGestureRecognizer*)recognizer;
+
+/**
+ Comments coming soon. TODO
+ */
+-(IBAction)handle4FingerTap:(UITapGestureRecognizer*)recognizer;
+
+/**
  Handles events when the user uses a pan (or slide) gesture in the pond.
  
  Two events may happen :
@@ -98,6 +108,12 @@
 - (BOOL) didExitPond:(BubbleView*)view;
 
 -(void) createAlertMessage:(NSString*)message withTitle:(NSString*)title;
+
+
+/**
+ * Returns YES if it tapped something, NO otherwise.
+ */
+-(BOOL) touchedSomething:(CGPoint) tap;
 
 
 @end

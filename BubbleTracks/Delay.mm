@@ -22,13 +22,54 @@
                           kDelayParam_DelayTime,
                           kAudioUnitScope_Global,
                           0,
-                          400.0,
+                          1.0,
                           0);
+    AudioUnitSetParameter(((AEAudioUnitFilter*)self.filter).audioUnit,
+                          kDelayParam_WetDryMix,
+                          kAudioUnitScope_Global,
+                          0,
+                          50.0,
+                          0);
+    ((AEAudioUnitFilter*)self.filter).bypassed = YES;
     return self;
 }
 
 - (void) modifyEffectX:(Float32) x Y:(Float32) y {
     [super modifyEffectX:x Y:y];
+    AudioUnitParameterValue delaytime;
+    AudioUnitGetParameter(((AEAudioUnitFilter*)self.filter).audioUnit,
+                          kDelayParam_DelayTime,
+                          kAudioUnitScope_Global,
+                          0,
+                          &delaytime);
+    AudioUnitParameterValue dryWetValue;
+    AudioUnitGetParameter(((AEAudioUnitFilter*)self.filter).audioUnit,
+                          kDelayParam_WetDryMix,
+                          kAudioUnitScope_Global,
+                          0,
+                          &dryWetValue); 
+    //Harmonize the change.
+    x = x * 0.05;
+    y = y * 0.2;
+    delaytime += x;
+    dryWetValue += y;
+    if (dryWetValue < 0) dryWetValue = 0;
+    if (delaytime < 0) delaytime = 0;
+    if (delaytime > 2) delaytime = 2;
+    if (dryWetValue > 100) dryWetValue = 100;
+    AudioUnitSetParameter(((AEAudioUnitFilter*)self.filter).audioUnit,
+                          kDelayParam_DelayTime,
+                          kAudioUnitScope_Global,
+                          0,
+                          delaytime,
+                          0);
+    AudioUnitSetParameter(((AEAudioUnitFilter*)self.filter).audioUnit,
+                          kDelayParam_WetDryMix,
+                          kAudioUnitScope_Global,
+                          0,
+                          dryWetValue,
+                          0);
+    NSLog(@"Delay Time : %f, DryWetValue : %f",delaytime,dryWetValue);
 }
 
 -(void) enable {

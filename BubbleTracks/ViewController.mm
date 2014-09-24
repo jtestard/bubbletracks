@@ -45,10 +45,16 @@
     max = CGPointMake(self.view.center.x + self.view.bounds.size.width/2, self.view.center.y + self.view.bounds.size.height/2);
     
     // Setup gesture recognizers
+    UITapGestureRecognizer * fourFingerTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handle4FingerTap:)];
+    UITapGestureRecognizer * threeFingerTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handle3FingerTap:)];
     UITapGestureRecognizer * twoFingerTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handle2FingerTap:)];
     UITapGestureRecognizer * tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     UIPanGestureRecognizer * panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
     UILongPressGestureRecognizer * longPressRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+    fourFingerTapRecognizer.delegate = self;
+    fourFingerTapRecognizer.numberOfTouchesRequired = 4;
+    threeFingerTapRecognizer.delegate = self;
+    threeFingerTapRecognizer.numberOfTouchesRequired = 3;
     twoFingerTapRecognizer.delegate = self;
     twoFingerTapRecognizer.numberOfTouchesRequired = 2;
     tapRecognizer.delegate = self;
@@ -60,6 +66,8 @@
     [self.view addGestureRecognizer:longPressRecognizer];
     [self.view addGestureRecognizer:tapRecognizer];
     [self.view addGestureRecognizer:twoFingerTapRecognizer];
+    [self.view addGestureRecognizer:threeFingerTapRecognizer];
+    [self.view addGestureRecognizer:fourFingerTapRecognizer];
     
     //Initialize audio mixer
     self.audioMixer = [[AudioMixer alloc] init];
@@ -84,6 +92,29 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(IBAction)handle3FingerTap:(UITapGestureRecognizer*)recognizer {
+    NSLog(@"Three tap gesture initiated...");
+    CGPoint firstTouch = [recognizer locationOfTouch:0 inView:self.view];
+    CGPoint secondTouch = [recognizer locationOfTouch:1 inView:self.view];
+    CGPoint thirdTouch = [recognizer locationOfTouch:2 inView:self.view];
+    [self touchedSomething:firstTouch];
+    [self touchedSomething:secondTouch];
+    [self touchedSomething:thirdTouch];
+}
+
+-(IBAction)handle4FingerTap:(UITapGestureRecognizer*)recognizer {
+    NSLog(@"Four tap gesture initiated...");
+    CGPoint firstTouch = [recognizer locationOfTouch:0 inView:self.view];
+    CGPoint secondTouch = [recognizer locationOfTouch:1 inView:self.view];
+    CGPoint thirdTouch = [recognizer locationOfTouch:2 inView:self.view];
+    CGPoint fourthTouch = [recognizer locationOfTouch:3 inView:self.view];
+    [self touchedSomething:firstTouch];
+    [self touchedSomething:secondTouch];
+    [self touchedSomething:thirdTouch];
+    [self touchedSomething:fourthTouch];
+}
+
 
 - (IBAction)handle2FingerTap:(UITapGestureRecognizer *)recognizer {
     NSLog(@"Two tap gesture initiated...");
@@ -113,6 +144,11 @@
         }
         //If both touches met bubbles ...
         if (secondView!=nil) {
+            //if they are both touching track bubbles...
+            if (firstView.type==0 && secondView.type==0) {
+                [self touchedSomething:firstTouch];
+                [self touchedSomething:secondTouch];
+            }
             //... attempt to create a link between them
             [self createLinkWithFirstView:firstView andSecondView:secondView];
             NSLog(@"Link created!");
@@ -208,11 +244,25 @@
     NSLog(@"Swipe gesture initiated...");
 }
 
+
+
 - (IBAction)handleTap:(UITapGestureRecognizer *)recognizer {
     NSLog(@"Single tap gesture initiated...");
     CGPoint tap = [recognizer locationInView:self.view];
-    NSArray* array = self.view.subviews;
+    if (![self touchedSomething:tap]) {
+        if (!_controller.selected) {
+            _controller.selected = true;
+            [self.navigationController pushViewController:_controller animated:YES];
+            [_controller setUpMenuView:tap];
+            lastTouched = tap;
+        }
+        
+    }
+}
+
+-(BOOL) touchedSomething:(CGPoint) tap {
     BOOL tapOnEmptySpace = true;
+    NSArray* array = self.view.subviews;
     for (int i = 0 ; i < [array count]; i++) {
         BubbleView* subView = (BubbleView*) [array objectAtIndex:i];
         if ([subView pointInside:tap withEvent:nil]) {
@@ -241,15 +291,7 @@
             }
         }
     }
-    if (tapOnEmptySpace) {
-        if (!_controller.selected) {
-            _controller.selected = true;
-            [self.navigationController pushViewController:_controller animated:YES];
-            [_controller setUpMenuView:tap];
-            lastTouched = tap;
-        }
-        
-    }
+    return !tapOnEmptySpace;
 }
 
 - (IBAction)handleLongPress:(UILongPressGestureRecognizer *)recognizer {

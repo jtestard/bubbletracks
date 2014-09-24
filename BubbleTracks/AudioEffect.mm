@@ -25,7 +25,7 @@
     xAxis+=((Float32)x)/80.0;
     yAxis+=((Float32)y)/80.0;
     [self avoidClipping];
-    NSLog(@"Effect Modified %@ (%f,%f)",self.effectName,x,y);
+    //NSLog(@"Effect Modified %@ (%f,%f)",self.effectName,x,y);
 }
 
 -(void) avoidClipping {
