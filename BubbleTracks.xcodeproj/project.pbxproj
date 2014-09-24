@@ -44,6 +44,11 @@
 		E528511719B16C6B000EEEB0 /* ScaleFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = E528511419B16C6B000EEEB0 /* ScaleFunctions.m */; };
 		E528511B19B16CD6000EEEB0 /* MenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E528511A19B16CD6000EEEB0 /* MenuViewController.mm */; };
 		E528515B19B175CE000EEEB0 /* CustomNavigationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E528515A19B175CE000EEEB0 /* CustomNavigationViewController.mm */; };
+		E58B3A9919D2C432009717BD /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58B3A9819D2C432009717BD /* OpenGLView.m */; };
+		E58B3A9C19D2C447009717BD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58B3A9A19D2C447009717BD /* OpenGLES.framework */; };
+		E58B3A9D19D2C447009717BD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58B3A9B19D2C447009717BD /* QuartzCore.framework */; };
+		E58B3AA119D2C4E5009717BD /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = E58B3A9F19D2C4E5009717BD /* SimpleVertex.glsl */; };
+		E58B3AA219D2C4E5009717BD /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = E58B3AA019D2C4E5009717BD /* SimpleFragment.glsl */; };
 		E58CE73319B2D9290022438B /* bass001.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72119B2D9290022438B /* bass001.wav */; };
 		E58CE73419B2D9290022438B /* bass002.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72219B2D9290022438B /* bass002.wav */; };
 		E58CE73519B2D9290022438B /* bass003.wav in Resources */ = {isa = PBXBuildFile; fileRef = E58CE72319B2D9290022438B /* bass003.wav */; };
@@ -203,6 +208,12 @@
 		E528511A19B16CD6000EEEB0 /* MenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MenuViewController.mm; sourceTree = "<group>"; };
 		E528515919B175CE000EEEB0 /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
 		E528515A19B175CE000EEEB0 /* CustomNavigationViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomNavigationViewController.mm; sourceTree = "<group>"; };
+		E58B3A9719D2C432009717BD /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		E58B3A9819D2C432009717BD /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
+		E58B3A9A19D2C447009717BD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E58B3A9B19D2C447009717BD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E58B3A9F19D2C4E5009717BD /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		E58B3AA019D2C4E5009717BD /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
 		E58CE72119B2D9290022438B /* bass001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bass001.wav; path = audioloops/bass001.wav; sourceTree = "<group>"; };
 		E58CE72219B2D9290022438B /* bass002.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bass002.wav; path = audioloops/bass002.wav; sourceTree = "<group>"; };
 		E58CE72319B2D9290022438B /* bass003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bass003.wav; path = audioloops/bass003.wav; sourceTree = "<group>"; };
@@ -310,6 +321,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E58B3A9C19D2C447009717BD /* OpenGLES.framework in Frameworks */,
+				E58B3A9D19D2C447009717BD /* QuartzCore.framework in Frameworks */,
 				E52850BD19B162C1000EEEB0 /* CoreGraphics.framework in Frameworks */,
 				E52850BF19B162C1000EEEB0 /* UIKit.framework in Frameworks */,
 				E52850BB19B162C1000EEEB0 /* Foundation.framework in Frameworks */,
@@ -353,6 +366,8 @@
 		E52850B919B162C1000EEEB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E58B3A9A19D2C447009717BD /* OpenGLES.framework */,
+				E58B3A9B19D2C447009717BD /* QuartzCore.framework */,
 				E52850BA19B162C1000EEEB0 /* Foundation.framework */,
 				E52850BC19B162C1000EEEB0 /* CoreGraphics.framework */,
 				E52850BE19B162C1000EEEB0 /* UIKit.framework */,
@@ -365,6 +380,7 @@
 		E52850C019B162C1000EEEB0 /* BubbleTracks */ = {
 			isa = PBXGroup;
 			children = (
+				E58B3A9E19D2C4A5009717BD /* Shaders */,
 				E574301019B1936D00CE54AF /* Audio */,
 				E528511819B16C71000EEEB0 /* Utilities */,
 				E528510C19B16B68000EEEB0 /* Delegates */,
@@ -400,6 +416,8 @@
 				E528510019B16A93000EEEB0 /* BubbleView.m */,
 				E528510119B16A93000EEEB0 /* LinkView.h */,
 				E528510219B16A93000EEEB0 /* LinkView.m */,
+				E58B3A9719D2C432009717BD /* OpenGLView.h */,
+				E58B3A9819D2C432009717BD /* OpenGLView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -583,6 +601,15 @@
 			name = Audio;
 			sourceTree = "<group>";
 		};
+		E58B3A9E19D2C4A5009717BD /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				E58B3A9F19D2C4E5009717BD /* SimpleVertex.glsl */,
+				E58B3AA019D2C4E5009717BD /* SimpleFragment.glsl */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
 		E5D4B7B119B2916F00D5052C /* Effects */ = {
 			isa = PBXGroup;
 			children = (
@@ -758,8 +785,10 @@
 				E52850C519B162C1000EEEB0 /* InfoPlist.strings in Resources */,
 				E5BF635C19B3B3F60090D511 /* ElectricSlap03.mp3 in Resources */,
 				E5BF632F19B2E2D00090D511 /* 80PopBeat09.mp3 in Resources */,
+				E58B3AA219D2C4E5009717BD /* SimpleFragment.glsl in Resources */,
 				E58CE73419B2D9290022438B /* bass002.wav in Resources */,
 				E5BF633B19B2E2D00090D511 /* ClassickRockBeat01.mp3 in Resources */,
+				E58B3AA119D2C4E5009717BD /* SimpleVertex.glsl in Resources */,
 				E5BF637019B3B3F60090D511 /* MotownDrummer06.mp3 in Resources */,
 				E58CE74019B2D9290022438B /* lead002.wav in Resources */,
 				E58CE73919B2D9290022438B /* drums003.wav in Resources */,
@@ -839,6 +868,7 @@
 				E52850D419B162C2000EEEB0 /* ViewController.mm in Sources */,
 				E528510919B16A93000EEEB0 /* LinkView.m in Sources */,
 				E5D4B7BD19B2923700D5052C /* HighPassFilter.mm in Sources */,
+				E58B3A9919D2C432009717BD /* OpenGLView.m in Sources */,
 				E5D4B7C619B2C74400D5052C /* AudioTrack.mm in Sources */,
 				E5D4B7B419B2918400D5052C /* Reverb.mm in Sources */,
 				E528511619B16C6B000EEEB0 /* Line.m in Sources */,
