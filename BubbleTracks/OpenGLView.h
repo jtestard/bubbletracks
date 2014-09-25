@@ -17,7 +17,6 @@
     GLuint _colorRenderBuffer;
     GLuint _positionSlot;
     GLuint _colorSlot;
-    float _sineCounter;
     unsigned long _renderCounter;
     GLuint _modelViewUniform;
     float _currentRotation;

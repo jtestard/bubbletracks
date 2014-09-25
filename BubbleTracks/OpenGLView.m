@@ -17,21 +17,36 @@ Vertex Vertices[] = {
     {{1, -1, 0}, {0.5, 0, 0, 1}},// Blue, Top Left
     {{1, 1, 0}, {0, 0.5, 0, 1}}, // Green, Top Right
     {{-1, 1, 0}, {0, 0, 0.5, 1}}, // Red, Bottom Right
-    {{-1, -1, 0}, {0, 0, 0, 1}} // Black, Bottom Left
+    {{-1, -1, 0}, {0, 0, 0, 1}}, // Black, Bottom Left
+    {{0, 0, 0}, {0, 0, 0, 1}} // Black, Middle
 };
 
 const GLubyte Indices[] = {
-    0, 1, 2,
-    2, 3, 0
+    0, 4, 1,
+    1, 4, 2,
+    2, 4, 3,
+    3, 4, 0
+};
+
+float _sineCounters[] = {
+    0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+    0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f
 };
 
 @implementation OpenGLView
+
+- (id)initWithCoder:(NSCoder*)aDecoder {
+    if(self = [super initWithCoder:aDecoder]) {
+        //Do something
+    }
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    return [self initWithFrame:screenBounds];;
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _sineCounter = 0.0f;
         _renderCounter = 0.0L;
         [self setupLayer];
         [self setupContext];
@@ -98,20 +113,25 @@ const GLubyte Indices[] = {
 - (void)render:(CADisplayLink*) displayLink {
     glClearColor(0, 104.0/255.0, 55.0/255.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
-    if (_renderCounter%5==0) {
-        Vertices[0].Color[0] = sinf(-_sineCounter)/4.0f + + 0.35f;
-        Vertices[0].Color[1] = cosf(_sineCounter+0.2f)/4.0f + 0.35f;
-        Vertices[0].Color[2] = sinf(_sineCounter-0.2f)/4.0f + 0.35f;
-        Vertices[1].Color[0] = cosf(-_sineCounter)/4.0f + 0.35f;
-        Vertices[1].Color[1] = sinf(_sineCounter+0.3f)/4.0f + 0.35f;
-        Vertices[1].Color[2] = cosf(_sineCounter-0.3f)/4.0f + 0.35f;
-        Vertices[2].Color[0] = cosf(_sineCounter)/4.0f + 0.35f;
-        Vertices[2].Color[1] = sinf(-_sineCounter+0.4f)/4.0f + 0.35f;
-        Vertices[2].Color[2] = cosf(_sineCounter-0.4f)/4.0f + 0.35f;
-        Vertices[3].Color[0] = cosf(_sineCounter)/4.0f + 0.35f;
-        Vertices[3].Color[1] = sinf(_sineCounter+0.5f)/4.0f + 0.35f;
-        Vertices[3].Color[2] = sinf(-_sineCounter-0.5f)/4.0f + 0.35f;
-        _sineCounter += 0.03f;
+    if (_renderCounter%3==0) {
+        Vertices[0].Color[0] = sinf(-_sineCounters[0])/8.0f + + 0.35f;
+        Vertices[0].Color[1] = cosf(_sineCounters[1]+0.2f)/8.0f + 0.35f;
+        Vertices[0].Color[2] = sinf(_sineCounters[2]-0.2f)/8.0f + 0.35f;
+        Vertices[1].Color[0] = cosf(-_sineCounters[3])/8.0f + 0.35f;
+        Vertices[1].Color[1] = sinf(_sineCounters[4]+0.3f)/8.0f + 0.35f;
+        Vertices[1].Color[2] = cosf(_sineCounters[5]-0.3f)/8.0f + 0.35f;
+        Vertices[2].Color[0] = cosf(_sineCounters[6])/8.0f + 0.35f;
+        Vertices[2].Color[1] = sinf(-_sineCounters[7]+0.4f)/8.0f + 0.35f;
+        Vertices[2].Color[2] = cosf(_sineCounters[8]-0.4f)/8.0f + 0.35f;
+        Vertices[3].Color[0] = cosf(_sineCounters[9])/8.0f + 0.35f;
+        Vertices[3].Color[1] = sinf(_sineCounters[10]+0.5f)/8.0f + 0.35f;
+        Vertices[3].Color[2] = sinf(-_sineCounters[11]-0.5f)/8.0f + 0.35f;
+        Vertices[4].Color[0] = cosf(-_sineCounters[12])/8.0f + 0.35f;
+        Vertices[4].Color[1] = sinf(-_sineCounters[13]+0.5f)/8.0f + 0.35f;
+        Vertices[4].Color[2] = sinf(-_sineCounters[14]-0.5f)/8.0f + 0.35f;
+        for (int i = 0 ; i < 15; i++) {
+            _sineCounters[i] += drand48()*0.1f;
+        }
         GLuint vertexBuffer;
         glGenBuffers(1, &vertexBuffer);
         glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);

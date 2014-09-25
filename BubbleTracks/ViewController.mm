@@ -9,25 +9,22 @@
 #import "ViewController.h"
 #import "AppDelegate.h"
 #import "AEBlockChannel.h"
-#import "MenuViewController.h"
-#import "TrackWrapper.h"
-#import "FXWrapper.h"
 #import "BubbleView.h"
 #import "BubbleFXView.h"
-#import "AudioUnitWrapper.h"
 #import "LinkView.h"
-#import "FileParser.h"
 #import "Line.h"
 #import "ScaleFunctions.h"
 #import "AudioMixer.h"
+#import "AppDelegate.h"
+
 #import <vector>
 
 @interface ViewController () {
     CGPoint min;
     CGPoint max;
-    MenuViewController* _controller;
     NSMutableArray * linksArray;
     int color;
+    AppDelegate* _appDelegate;
 }
 @end
 
@@ -40,7 +37,7 @@
     [super viewDidLoad];
     
     //Set up the view elements
-    self.view.backgroundColor = [UIColor blackColor];
+    _appDelegate = [[UIApplication sharedApplication] delegate];
     min = CGPointMake(self.view.center.x - self.view.bounds.size.width/2, self.view.center.y - self.view.bounds.size.height/2);
     max = CGPointMake(self.view.center.x + self.view.bounds.size.width/2, self.view.center.y + self.view.bounds.size.height/2);
     
@@ -71,20 +68,6 @@
     
     //Initialize audio mixer
     self.audioMixer = [[AudioMixer alloc] init];
-    
-    //Initialize table view controller. It is hidden at first.
-    _controller = [[MenuViewController alloc] initWithStyle:UITableViewStylePlain];
-    _controller.mainViewController = self;
-    
-    // Generate wrappers for menu view.
-    FileParser* fileparser = [[FileParser alloc] init];
-    NSMutableArray* trackUnitArray = [fileparser generateTrackWrappers];
-    NSMutableArray* fXUnitArray = [fileparser generatefXWrappers];
-    NSMutableArray * audioUnitArray = [[NSMutableArray alloc] initWithCapacity:[trackUnitArray count] + [fXUnitArray count]];
-    [audioUnitArray addObjectsFromArray:trackUnitArray];
-    [audioUnitArray addObjectsFromArray:fXUnitArray];
-    _controller.audioUnitArray = audioUnitArray;
-    _controller.selected = false;
 }
 
 - (void)didReceiveMemoryWarning
@@ -250,6 +233,7 @@
     NSLog(@"Single tap gesture initiated...");
     CGPoint tap = [recognizer locationInView:self.view];
     if (![self touchedSomething:tap]) {
+        
         if (!_controller.selected) {
             _controller.selected = true;
             [self.navigationController pushViewController:_controller animated:YES];

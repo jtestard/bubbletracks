@@ -19,7 +19,7 @@
     self.controller = controller;
     AEAudioFilePlayer* player = [AEAudioFilePlayer audioFilePlayerWithURL:[[NSBundle mainBundle] URLForResource:name withExtension:extension]
                                                           audioController: self.controller
-                                                                    error:NULL];
+                                                                    error: NULL];
     player.volume = 1.0;
     player.channelIsMuted = YES;
     player.loop = YES;

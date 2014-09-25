@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "CustomNavigationViewController.h"
 
 @implementation AppDelegate
 
@@ -16,13 +15,23 @@
 {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ViewController *rootController = [[ViewController alloc] init];
-    CustomNavigationViewController * aNavigationController = [[CustomNavigationViewController alloc] initWithRootViewController:rootController];
-    self.navigationController = aNavigationController;
-    self.window.rootViewController = self.navigationController;
     self.window.backgroundColor = [UIColor whiteColor];
+    UIStoryboard *startUpStoryboard = [UIStoryboard storyboardWithName:@"StartUp" bundle: nil];
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    self.viewController = (ViewController*)[startUpStoryboard instantiateInitialViewController];
+    self.splitViewController = (UISplitViewController*)[mainStoryboard instantiateInitialViewController];
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
+
+}
+
+-(void)showViewController{
+    self.window.rootViewController = self.viewController;
+}
+
+-(void)showSplitViewController{
+    self.window.rootViewController = self.splitViewController;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

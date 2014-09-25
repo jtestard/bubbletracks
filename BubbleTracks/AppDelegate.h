@@ -7,13 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AEAudioController.h"
 
-@class AEAudioController;
+@class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *navigationController;
+
+@property (strong, nonatomic) ViewController* viewController;
+
+@property (strong, nonatomic) UISplitViewController* splitViewController;
+
+-(void)showViewController;
+
+-(void)showSplitViewController;
 
 @end
