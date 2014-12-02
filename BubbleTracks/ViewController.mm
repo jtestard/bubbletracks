@@ -233,14 +233,8 @@
     NSLog(@"Single tap gesture initiated...");
     CGPoint tap = [recognizer locationInView:self.view];
     if (![self touchedSomething:tap]) {
-        
-        if (!_controller.selected) {
-            _controller.selected = true;
-            [self.navigationController pushViewController:_controller animated:YES];
-            [_controller setUpMenuView:tap];
-            lastTouched = tap;
-        }
-        
+        [_appDelegate showSplitViewController];
+        lastTouched = tap;
     }
 }
 
@@ -413,10 +407,12 @@
 
 
 - (BOOL) didExitPond:(BubbleView *)view {
-    return view.center.x < self.view.frame.origin.x ||
-    view.center.x > self.view.frame.origin.x + self.view.frame.size.width ||
-    view.center.y < self.view.frame.origin.y ||
-    view.center.y > self.view.frame.origin.y + self.view.frame.size.height;
+    CGRect screen = [[UIScreen mainScreen] bounds]; //Portrait
+    CGRect landscape = CGRectMake(0,0,screen.size.height,screen.size.width);
+    return view.center.x < landscape.origin.x ||
+    view.center.x > landscape.origin.x + landscape.size.width ||
+    view.center.y < landscape.origin.y ||
+    view.center.y > landscape.origin.y + landscape.size.height;
 }
 
 -(void) createAlertMessage:(NSString*)message withTitle:(NSString*)title {

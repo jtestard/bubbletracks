@@ -20,6 +20,7 @@
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     self.viewController = (ViewController*)[startUpStoryboard instantiateInitialViewController];
     self.splitViewController = (UISplitViewController*)[mainStoryboard instantiateInitialViewController];
+    NSArray* viewControllers = [[self.splitViewController viewControllers][1] viewControllers];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

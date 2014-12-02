@@ -1,21 +1,9 @@
-## Bubble Tracks
+## INSTRUCTIONS FOR DOWNLOAD AND INSTALLATION
+These are instructions to download and install the BubbleTracks project in order to run it on an iOS device or an iOS simulator. If you do not wish to run the software or look at the source code, you can skip this section. As my application has not yet been released on the Apple Store, installing and running BubbleTracks requires the XCode development environment (preferably with version 4.0 or higher) available only under the Apple operating system. All other dependencies are included.
 
-### News
- - Have settled on the Amazing Audio Engine framework and dropping MoMu.
- - Added support for compressed audio.
- - Adding support for larger collection of files and effects.
- - Added Library linking with cocoa pods.
-
-### Tickets
-
-1) Time Stretching and tempo 
-2) Support of multiple audio files/effects with same name.
-3) Support for iTunes library samples.
-4) DSP-style Link visualization.
-5) Enhance support for large audio files.
-6) Improve overall performance by adding smooth audio buffering?
-
-### Limitations 
-
- - Only one tempo available (120).
- - ... TBD
+### Step by step guide:
+    1. Download the project source at http://www.cs.mcgill.ca/~jtesta/BubbleTracks.zip.
+    2. Unzip the BubbleTracks.zip file in the folder where you wish to install the application. You should get a BubbleTracks folder.
+    3. Go in the BubbleTracks folder
+    4. Click on the BubbleTracks.xcodeproj file. This will launch the XCode software. Here you will have access to the source code in a convenient way.
+    5. Click on the Run Button on the upper left corner of the screen. By default, this should run the app under the iOS simulator. Enjoy!

@@ -8,9 +8,11 @@
 
 #import "MasterViewController.h"
 #import "ItemsController.h"
+#import "AppDelegate.h"
 
 @interface MasterViewController () {
     NSMutableDictionary* _categories;
+    AppDelegate* _appDelegate;
 }
 @end
 
@@ -27,13 +29,17 @@
     if (!_categories) {
         NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
         NSFileManager *fm = [NSFileManager defaultManager];
-        NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
+        NSString *directory = [bundleRoot stringByAppendingPathComponent:@""];
+        NSArray *dirContents = [fm contentsOfDirectoryAtPath:directory error:nil];
         NSPredicate *fltr = [NSPredicate predicateWithFormat:@"(self ENDSWITH '.mp3') OR (self ENDSWITH '.wav')"];
         NSArray *audiofiles = [dirContents filteredArrayUsingPredicate:fltr];
         NSMutableDictionary* categories = [[NSMutableDictionary alloc] initWithCapacity:[audiofiles count]];
         for (NSString* audiofile in audiofiles) {
             NSArray* components = [audiofile componentsSeparatedByString:@"_"];
-            //Assumes there will be exactly two components.
+            //Quick fix
+            if (components.count!=2)
+                continue;
+            //There should always be exactly two components.
             if (![categories objectForKey:components[0]]) {
                 categories[components[0]] = [[NSMutableArray alloc] init];
                 [(NSMutableArray*) categories[components[0]] addObject:audiofile];
@@ -57,14 +63,21 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    _appDelegate = [[UIApplication sharedApplication] delegate];
     [self setupCategories];
-    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(back:)];
+    self.navigationItem.leftBarButtonItem = backButton;
+
     NSIndexPath* indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     for (int i = 0; i < _categories.count; i++) {
         [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
     
     self.detailViewController = (ItemsController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+}
+
+- (void)back:(id)sender {
+    [_appDelegate showViewController];
 }
 
 - (void)didReceiveMemoryWarning

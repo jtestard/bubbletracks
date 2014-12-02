@@ -74,8 +74,10 @@
     NSString* fullname = (NSString*)[_items objectAtIndex:indexPath.row];
     NSArray* components = [fullname componentsSeparatedByString:@"_"];
     if (components.count < 2) {
+        //It's an effect
         cell.textLabel.text = fullname;
     } else {
+        //It's a track
         cell.textLabel.text = components[1];
     }
     return cell;
@@ -94,7 +96,16 @@
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
     //We want to create the corresponding track at the location given by the
     UITableViewCell * tableViewCell = [tableView cellForRowAtIndexPath:indexPath];
-    NSString* selectedAudioFile = tableViewCell.textLabel.text;
+    NSString* selectedName = tableViewCell.textLabel.text;
+    if ([_categoryName isEqualToString:@"effects"]) {
+        //It's an effect
+        [_appDelegate.viewController loadFXFiles:selectedName];
+    } else {
+        //It's a track
+        NSString* fullName = [@[_categoryName, selectedName] componentsJoinedByString:@"_"];
+        [_appDelegate.viewController loadTrackFiles:fullName];
+    }
+
     [_appDelegate showViewController];
 }
 
